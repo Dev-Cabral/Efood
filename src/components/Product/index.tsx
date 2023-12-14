@@ -37,7 +37,7 @@ const Product = ({
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Destaque>{destaque}</Destaque>
+    <Destaque>Destaque da semana</Destaque>
     <Categoria>
       <h3>{system}</h3>
     </Categoria>

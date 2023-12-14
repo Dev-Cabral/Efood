@@ -17,7 +17,7 @@ export const GlobalCss = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    // list-style: none;
+    list-style: none;
   }
 
   body {
@@ -32,4 +32,17 @@ export const GlobalCss = createGlobalStyle`
     margin: 0 auto;
   }
 
+  .destaque {
+    background-color: ${cores.vermelho};
+    width: 150px;
+    top: 20px;
+    left: 220px;
+    position: absolute;
+    display: flex;
+    color: ${cores.branca};
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    padding: 6px 16px;
+  }
 `

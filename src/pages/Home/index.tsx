@@ -15,7 +15,7 @@ const promocoes: Game[] = [
     title: 'Hioki Sushi',
     system: 'Japonesa',
     infos: [''],
-    destaque: 'Destaque da semana',
+    destaque: '',
     // estrela: estrela,
     image: suchi
   },
