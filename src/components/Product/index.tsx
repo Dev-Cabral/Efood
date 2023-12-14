@@ -7,8 +7,11 @@ import {
   Destaque,
   Estrela,
   Infos,
+  Botao,
   Titulo
 } from './styles'
+import { Link } from 'react-router-dom'
+import { Links } from '../Header/styles'
 
 type Props = {
   title: string
@@ -49,6 +52,19 @@ const Product = ({
       </Estrela>
     </Titulo>
     <Descricao>{description}</Descricao>
+    <div>
+      <nav>
+        <Links>
+          <Botao>
+            <nav>
+              <a href="">
+                <Link to="/saibaMais">Saiba mais</Link>
+              </a>
+            </nav>
+          </Botao>
+        </Links>
+      </nav>
+    </div>
   </Card>
 )
 

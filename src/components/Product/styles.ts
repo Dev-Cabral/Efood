@@ -114,3 +114,21 @@ export const Destaque = styled.h3`
   //   text-align: center;
   // }
 `
+export const Botao = styled.button`
+  width: 82px;
+  height: 24px;
+  padding: 4px;
+  margin-left: 8px;
+  margin-bottom: 4px;
+  background-color: ${cores.vermelho};
+  border: none;
+  font-weight: bold;
+
+  a {
+    color: ${cores.branca};
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+  }
+`

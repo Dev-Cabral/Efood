@@ -29,4 +29,5 @@ export const FooterSection = styled.div`
   background-color: ${cores.rosa};
 
   margin-bottom: 64px;
+  margin-top: 64px;
 `
