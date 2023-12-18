@@ -11,7 +11,6 @@ import {
   Titulo
 } from './styles'
 import { Link } from 'react-router-dom'
-import { Links } from '../Header/styles'
 
 type Props = {
   title: string
@@ -54,15 +53,13 @@ const Product = ({
     <Descricao>{description}</Descricao>
     <div>
       <nav>
-        <Links>
-          <Botao>
-            <nav>
-              <a href="">
-                <Link to="/saibaMais">Saiba mais</Link>
-              </a>
-            </nav>
-          </Botao>
-        </Links>
+        <Botao>
+          <nav>
+            <a href="">
+              <Link to="/saibaMais">Saiba mais</Link>
+            </a>
+          </nav>
+        </Botao>
       </nav>
     </div>
   </Card>

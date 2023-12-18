@@ -1,4 +1,8 @@
-import { Container, FooterSection, Link, Links, SectionTittle } from './styles'
+import { Container, Efood, FooterSection, Link, Links } from './styles'
+import logo from '../../asserts/images/logo.png'
+import instagram from '../../asserts/images/instagram.png'
+import facebook from '../../asserts/images/facebook.png'
+import twiter from '../../asserts/images/twitter.png'
 
 const currentYear = new Date().getFullYear()
 
@@ -6,46 +10,26 @@ const Footer = () => (
   <Container>
     <div>
       <FooterSection>
-        <SectionTittle>Categoria</SectionTittle>
+        <Efood>
+          <img src={logo} alt="EFOOD" />
+        </Efood>
         <Links>
           <li>
-            <Link>RPG</Link>
+            <img src={instagram} alt="Instagram" />
           </li>
           <li>
-            <Link>Ação</Link>
+            <img src={facebook} alt="Facebook" />
           </li>
           <li>
-            <Link>Aventura</Link>
-          </li>
-          <li>
-            <Link>Esporte</Link>
-          </li>
-          <li>
-            <Link>Simulação</Link>
-          </li>
-          <li>
-            <Link>Estratégia</Link>
-          </li>
-          <li>
-            <Link>FPS</Link>
+            <img src={twiter} alt="Twiter" />
           </li>
         </Links>
+        <p>
+          A efood é uma plataforma para divulgação de estabelecimentos, a
+          responsabilidade pela entrega, qualidade dos produtos é toda do
+          estabelecimento contratado.{' '}
+        </p>
       </FooterSection>
-      <FooterSection>
-        <SectionTittle>Acesso rápido</SectionTittle>
-        <Links>
-          <li>
-            <Link>Novidades</Link>
-          </li>
-          <li>
-            <Link>Promoções</Link>
-          </li>
-          <li>
-            <Link>Em breve</Link>
-          </li>
-        </Links>
-      </FooterSection>
-      <p>{currentYear} - &copy; E-PLAY Todos os direitos resevados</p>
     </div>
   </Container>
 )

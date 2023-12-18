@@ -118,7 +118,7 @@ export const Botao = styled.button`
   width: 82px;
   height: 24px;
   padding: 4px;
-  margin-left: 8px;
+  margin-left: 4px;
   margin-bottom: 4px;
   background-color: ${cores.vermelho};
   border: none;
