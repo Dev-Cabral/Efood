@@ -7,9 +7,11 @@ export const Card = styled.div`
   height: 358px;
   margin: 24px 4px;
   background-color: ${cores.vermelho};
+  border: 2px solid ${cores.vermelho};
 
   img {
-    width: 100%;
+    margin: 8px 8px;
+    width: 95%;
   }
 
   ${TagContainer} {

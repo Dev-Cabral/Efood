@@ -22,7 +22,7 @@ export const List = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
   margin-top: 10px;
-  border: 2px;
+  border: 1px solide ${cores.vermelho};
   margin-left: 172px;
   height: 890px;
   width: 1024px;
