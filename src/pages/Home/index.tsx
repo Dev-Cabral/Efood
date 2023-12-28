@@ -16,7 +16,6 @@ const promocoes: Game[] = [
     system: 'Japonesa',
     infos: [''],
     destaque: '',
-    // estrela: estrela,
     image: suchi
   },
   {

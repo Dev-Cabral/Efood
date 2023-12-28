@@ -23,7 +23,7 @@ type Props = {
   destaque: string
 }
 
-const Product = ({
+const Produto = ({
   title,
   category,
   system,
@@ -38,30 +38,16 @@ const Product = ({
         <Tag key={info}>{info}</Tag>
       ))}
     </Infos>
-    <Destaque>Destaque da semana</Destaque>
-    <Categoria>
-      <h3>{system}</h3>
-    </Categoria>
-    <Titulo>
-      {title}
-      <Estrela>
-        <h3>{category}</h3>
-        <img src={estrela} alt="" />
-      </Estrela>
-    </Titulo>
+    <Titulo>{title}</Titulo>
     <Descricao>{description}</Descricao>
     <div>
-      <nav>
-        <Botao>
-          <nav>
-            <a href="">
-              <Link to="/saibaMais">Saiba mais</Link>
-            </a>
-          </nav>
-        </Botao>
-      </nav>
+      <Botao>
+        <a href="">
+          <Link to="/saibaMais">Adicionar ao carrinho</Link>
+        </a>
+      </Botao>
     </div>
   </Card>
 )
 
-export default Product
+export default Produto
