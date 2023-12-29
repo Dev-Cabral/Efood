@@ -17,7 +17,7 @@ export const Efood = styled.div`
 export const Frase = styled.h2`
   color: ${cores.vermelho};
   font-weight: 900;
-  font-size: 34px;
+  font-size: 35px;
   text-align: center;
 `
 export const DivFrase = styled.div`
