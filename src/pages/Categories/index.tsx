@@ -51,7 +51,7 @@ const produtos: Produtos[] = [
 const Category = () => (
   <>
     <Header />
-    <ListagemProdutos produtos={produtos} title={''} />
+    <ListagemProdutos produtos={produtos} />
     {/* <ProductList games={promocoes} title="Promoções" /> */}
   </>
 )

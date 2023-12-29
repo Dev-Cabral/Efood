@@ -1,7 +1,6 @@
 import {
   Imagem,
   Efood,
-  DivFrase,
   Imagem2,
   Restaurante,
   Car,
@@ -12,8 +11,6 @@ import {
 import logo from '../../../asserts/images/logo.png'
 import bannerImg from '../../../asserts/images/fundo.png'
 import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.png'
-
-import carrinho from '../../../asserts/images/carrinho.svg'
 
 const Header = () => (
   <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>

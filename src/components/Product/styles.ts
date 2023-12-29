@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
-import { TagContainer } from '../Tag/styles'
 
 export const Card = styled.div`
-  // widht: 472px;
+  width: 472px;
+  height: 398px;
+
   margin: 24px 4px;
   background-color: ${cores.branca};
   border: 2px solid ${cores.vermelho};
@@ -11,10 +12,6 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-  }
-
-  ${TagContainer} {
-    margin-right: 8px;
   }
 `
 
@@ -37,7 +34,6 @@ export const Estrela = styled.div`
 `
 
 export const Titulo = styled.h3`
-// color: ${cores.branca};
   width: 100%;
   font-weight: 700;
   font-size: 18px;
@@ -52,53 +48,36 @@ export const Titulo = styled.h3`
 
 export const Descricao = styled.p`
   color: ${cores.vermelho};
-  // width: 256px;
   height: 88px;
   font-size: 14px;
   line-height: 22px;
-  // display: block;
   display: flex;
   margin: 4px 4px;
 `
-export const Infos = styled.div`
-  // background-color: ${cores.vermelho};
-  // width: 160px;
-  // top: 24px;
-  // right: 120px;
-  // position: absolute;
-  // margin-left: 530px;
-  // display: flex;
-  // justify-content space-between;
-  // align-items: center;
-  // text-align: center;
 
-  // img {
-  //   // margin-top: 4px;
-  //   width: 18px;
-  //   height: 18px;
-  // }
-`
 export const Categoria = styled.div`
   background-color: ${cores.vermelho};
   width: 80px;
-  top: 20px;
-  left: 390px;
+  top: 10px;
+  left: 375px;
   position: absolute;
   display: flex;
-  padding: 2px 8px;
+  padding: 2px;
+  text-align: center;
 
   h3 {
     color: ${cores.branca};
     font-size: 12px;
     padding: 4px;
     text-align: center;
+    margin-left: 10px;
   }
 `
 export const Destaque = styled.h3`
   background-color: ${cores.vermelho};
   width: 150px;
-  top: 20px;
-  left: 220px;
+  top: 435px;
+  left: 540px;
   position: absolute;
   display: flex;
   color: ${cores.branca};
@@ -106,13 +85,6 @@ export const Destaque = styled.h3`
   padding: 4px;
   text-align: center;
   padding: 6px 16px;
-
-  // h3 {
-  //   color: ${cores.branca};
-  //   font-size: 12px;
-  //   padding: 4px;
-  //   text-align: center;
-  // }
 `
 export const Botao = styled.button`
   width: 82px;

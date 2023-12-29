@@ -4,8 +4,6 @@ import instagram from '../../asserts/images/instagram.png'
 import facebook from '../../asserts/images/facebook.png'
 import twiter from '../../asserts/images/twitter.png'
 
-const currentYear = new Date().getFullYear()
-
 const Footer = () => (
   <Container>
     <div>
@@ -27,7 +25,7 @@ const Footer = () => (
         <p>
           A efood é uma plataforma para divulgação de estabelecimentos, a
           responsabilidade pela entrega, qualidade dos produtos é toda do
-          estabelecimento contratado.{' '}
+          estabelecimento contratado.
         </p>
       </FooterSection>
     </div>

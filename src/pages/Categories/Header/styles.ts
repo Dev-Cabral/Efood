@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 // import { TagContainer } from '../../../asse'
 import { cores } from '../../../styles'
-import { TagContainer } from '../../../components/Tag/styles'
+// import { TagContainer } from '../../../components/Tag/styles'
 
 export const Imagem = styled.div`
   width: 100%;
@@ -9,7 +9,7 @@ export const Imagem = styled.div`
   margin-top: -120px;
   margin-bottom: 84px;
 
-  ${TagContainer} {
+   {
     // position: absolute;
     // top: 32px;
   }
@@ -22,7 +22,7 @@ export const Imagem2 = styled.div`
   position: absolute;
   top: 32px;
 
-  ${TagContainer} {
+   {
     // position: absolute;
     // top: 32px;
   }
