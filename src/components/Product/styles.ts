@@ -14,7 +14,7 @@ export const Card = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 340px) {
     width: 584px;
     height: 450px;
 
@@ -103,11 +103,10 @@ export const Destaque = styled.div`
   padding: 6px 16px;
   border: none;
 
-  @media (max-width: 640px) {
+  @media (max-width: 340px) {
     max-width: 150px;
-    width: 100%;
     top: 400px;
-    left: 550px;
+    left: 450px;
     position: absolute;
     font-size: 12px;
     text-align: center;

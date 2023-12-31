@@ -20,8 +20,6 @@ export const GlobalCss = createGlobalStyle`
     list-style: none;
   }
 
-  }
-
   .container {
     background-color: ${cores.rosaFundo};
     max-width: 1366px;
@@ -29,10 +27,9 @@ export const GlobalCss = createGlobalStyle`
     height: 100%;
     margin: 0 auto;
 
-    @media (max-width: 640px) {
-      width: 1204px;
+    @media (max-width: 340px) {
+      width: 878px;
       align-items: center;
-
     }
   }
 `

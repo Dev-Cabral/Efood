@@ -10,6 +10,10 @@ export const SectionTittle = styled.h4`
   color: ${cores.branca};
   font-size: 16px;
   font-weigth: bold;
+
+  @media (mim-width: 280px & max-width: 340px) {
+    width: 340px;
+  }
 `
 
 export const Links = styled.ul`
@@ -29,9 +33,9 @@ export const Links = styled.ul`
     height: 24px;
   }
 
-  @media (max-width: 640px) {
-    margin-left: 510px;
-    margin-top: 28px;
+  @media (max-width: 340px) {
+    margin-left: 325px;
+    margin-top: 32px;
   }
 `
 
@@ -48,15 +52,23 @@ export const FooterSection = styled.div`
     font-size: 10px;
     text-align: center;
     margin-top: 128px;
-    width: 400px;
-    margin-left: 494px;
+    margin-left: 90px;
+  }
 
-    @media (max-width: 640px) {
-      font-size: 10px;
+  @media (max-width: 340px) {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 128px;
+    margin-left: 54px;
+
+    p {
+      color: ${cores.vermelho};
+      font-size: 16px;
       text-align: center;
-      margin-top: 128px;
-      width: 400px;
-      margin-left: 354px;
+      margin-top: 100px;
+      width: 640px;
+      margin-left: 24px;
+    }
   }
 `
 export const Efood = styled.div`
@@ -68,7 +80,7 @@ export const Efood = styled.div`
   @media (max-width: 640px) {
     width: 126px;
     height: 58px;
-    margin-left: 494px;
+    margin-left: 308px;
 
     img {
       padding-top: 10px;
