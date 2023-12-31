@@ -13,6 +13,13 @@ export const Card = styled.div`
   img {
     width: 100%;
   }
+
+  @media (max-width: 640px) {
+    width: 584px;
+    height: 450px;
+
+    align-items: center;
+  }
 `
 
 export const Estrela = styled.div`
@@ -72,18 +79,41 @@ export const Categoria = styled.div`
     text-align: center;
     margin-left: 10px;
   }
+
+  @media (max-width: 640px) {
+    width: 80px;
+    top: 10px;
+    left: 485px;
+    position: absolute;
+    display: flex;
+    padding: 2px;
+    text-align: center;
+  }
 `
-export const Destaque = styled.h3`
+export const Destaque = styled.div`
   background-color: ${cores.vermelho};
-  width: 150px;
-  height: auto;
-  top: 435px;
+  max-width: 150px;
+  width: 100%;
+  top: 400px;
   left: 390px;
   position: absolute;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
   padding: 6px 16px;
+  border: none;
+
+  @media (max-width: 640px) {
+    max-width: 150px;
+    width: 100%;
+    top: 400px;
+    left: 550px;
+    position: absolute;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 16px;
+    border: none;
+  }
 `
 export const Botao = styled.button`
   width: 82px;
@@ -101,5 +131,6 @@ export const Botao = styled.button`
     font-size: 12px;
     text-align: center;
     border: none;
+  }
   }
 `

@@ -20,11 +20,19 @@ export const GlobalCss = createGlobalStyle`
     list-style: none;
   }
 
+  }
+
   .container {
     background-color: ${cores.rosaFundo};
     max-width: 1366px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+
+    @media (max-width: 640px) {
+      width: 1204px;
+      align-items: center;
+
+    }
   }
 `

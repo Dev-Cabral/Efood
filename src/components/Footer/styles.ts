@@ -28,13 +28,11 @@ export const Links = styled.ul`
     width: 24px;
     height: 24px;
   }
-`
 
-export const Link = styled.a`
-  // color: ${cores.vermelho};
-  // text-decoration: none;
-  // margin-right: 8px;
-  // align-items: center;
+  @media (max-width: 640px) {
+    margin-left: 510px;
+    margin-top: 28px;
+  }
 `
 
 export const FooterSection = styled.div`
@@ -52,6 +50,13 @@ export const FooterSection = styled.div`
     margin-top: 128px;
     width: 400px;
     margin-left: 494px;
+
+    @media (max-width: 640px) {
+      font-size: 10px;
+      text-align: center;
+      margin-top: 128px;
+      width: 400px;
+      margin-left: 354px;
   }
 `
 export const Efood = styled.div`
@@ -59,4 +64,13 @@ export const Efood = styled.div`
   height: 58px;
   padding-top: 40px;
   margin-left: 622px;
+
+  @media (max-width: 640px) {
+    width: 126px;
+    height: 58px;
+    margin-left: 494px;
+
+    img {
+      padding-top: 10px;
+    }
 `

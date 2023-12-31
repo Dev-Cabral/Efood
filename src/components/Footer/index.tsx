@@ -1,4 +1,4 @@
-import { Container, Efood, FooterSection, Link, Links } from './styles'
+import { Container, Efood, FooterSection, Links } from './styles'
 import logo from '../../asserts/images/logo.png'
 import instagram from '../../asserts/images/instagram.png'
 import facebook from '../../asserts/images/facebook.png'
