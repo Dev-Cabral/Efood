@@ -11,15 +11,13 @@ export const List = styled.ul`
   border: 2px;
   margin-left: 172px;
 
-  @media (max-width: 340px) {
-    width: 340px;
-    color: ${cores.vermelho};
+  @media (max-width: 640px) {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 28px;
     margin-top: 40px;
     border: 2px;
-    margin-left: 130px;
+    margin-left: 200px;
   }
 `
 

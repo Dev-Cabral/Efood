@@ -5,14 +5,18 @@ export const Container = styled.footer`
   background-color: ${cores.rosa};
   font-size: 14px;
   align-items: center;
+
+  @media (mim-width: 280px & max-width: 640px) {
+    height: 640px;
+  }
 `
 export const SectionTittle = styled.h4`
   color: ${cores.branca};
   font-size: 16px;
   font-weigth: bold;
 
-  @media (mim-width: 280px & max-width: 340px) {
-    width: 340px;
+  @media (mim-width: 280px & max-width: 640px) {
+    width: 640px;
   }
 `
 
@@ -33,8 +37,8 @@ export const Links = styled.ul`
     height: 24px;
   }
 
-  @media (max-width: 340px) {
-    margin-left: 325px;
+  @media (max-width: 640px) {
+    margin-left: 525px;
     margin-top: 32px;
   }
 `
@@ -52,22 +56,22 @@ export const FooterSection = styled.div`
     font-size: 10px;
     text-align: center;
     margin-top: 128px;
-    margin-left: 90px;
+    margin-left: 80px;
   }
 
-  @media (max-width: 340px) {
-    font-size: 10px;
+  @media (max-width: 640px) {
     text-align: center;
     margin-top: 128px;
-    margin-left: 54px;
+    margin-left: 14px;
+    margin-bottom: 50px;
 
     p {
       color: ${cores.vermelho};
-      font-size: 16px;
+      font-size: 1.3rem;
       text-align: center;
-      margin-top: 100px;
+      margin-top: 50px;
       width: 640px;
-      margin-left: 24px;
+      margin-left: 254px;
     }
   }
 `
@@ -80,7 +84,7 @@ export const Efood = styled.div`
   @media (max-width: 640px) {
     width: 126px;
     height: 58px;
-    margin-left: 308px;
+    margin-left: 508px;
 
     img {
       padding-top: 10px;

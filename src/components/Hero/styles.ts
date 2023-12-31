@@ -7,8 +7,9 @@ export const Imagem = styled.div`
   height: 100%;
   margin-top: -24px;
 
-  @media (max-width: 340px) {
+  @media (max-width: 640px) {
     align-items: center;
+    width: 1192px;
   }
 `
 
@@ -21,10 +22,10 @@ export const Efood = styled.div`
     padding-top: 80px;
   }
 
-  @media (max-width: 340px) {
+  @media (max-width: 640px) {
     width: 126px;
     height: 58px;
-    margin-left: 364px;
+    margin-left: 484px;
 
     img {
       padding-top: 80px;
@@ -38,10 +39,9 @@ export const Frase = styled.h2`
   font-size: 35px;
   text-align: center;
 
-  @media (max-width: 340px) {
-    width: 70%;
+  @media (max-width: 640px) {
     height: 100%;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     text-alig-center;
 
   }
@@ -53,7 +53,7 @@ export const DivFrase = styled.div`
   margin-left: 414px;
   margin-top: 186px;
 
-  @media (max-width: 340px) {
+  @media (max-width: 640px) {
     margin-left: 254px;
   }
 `

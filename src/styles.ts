@@ -27,8 +27,8 @@ export const GlobalCss = createGlobalStyle`
     height: 100%;
     margin: 0 auto;
 
-    @media (max-width: 340px) {
-      width: 878px;
+    @media (max-width: 640px) {
+      width: 1188px;
       align-items: center;
     }
   }

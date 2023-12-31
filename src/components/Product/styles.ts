@@ -14,9 +14,9 @@ export const Card = styled.div`
     width: 100%;
   }
 
-  @media (max-width: 340px) {
-    width: 584px;
-    height: 450px;
+  @media (max-width: 640px) {
+    width: 684px;
+    height: 500px;
 
     align-items: center;
   }
@@ -83,7 +83,7 @@ export const Categoria = styled.div`
   @media (max-width: 640px) {
     width: 80px;
     top: 10px;
-    left: 485px;
+    left: 585px;
     position: absolute;
     display: flex;
     padding: 2px;
@@ -103,10 +103,10 @@ export const Destaque = styled.div`
   padding: 6px 16px;
   border: none;
 
-  @media (max-width: 340px) {
+  @media (max-width: 640px) {
     max-width: 150px;
     top: 400px;
-    left: 450px;
+    left: 620px;
     position: absolute;
     font-size: 12px;
     text-align: center;
