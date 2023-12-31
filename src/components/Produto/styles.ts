@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Card = styled.div`
-  widht: 320px;
+  width: 320px;
   height: 358px;
   margin: 24px 4px;
   background-color: ${cores.vermelho};

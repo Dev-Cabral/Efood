@@ -18,7 +18,7 @@ const Header = () => (
     <Restaurante>
       <nav>
         <a href="">
-          <Link to="/restaurante">Restaurantes</Link>
+          <Link to="/">Restaurantes</Link>
         </a>
       </nav>
       <Efood>

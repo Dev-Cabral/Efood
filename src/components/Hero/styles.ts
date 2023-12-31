@@ -10,7 +10,7 @@ export const Imagem = styled.div`
 export const Efood = styled.div`
   width: 126px;
   height: 58px;
-  padding-top: 40px;
+  padding-top: 80px;
   margin-left: 622px;
 `
 
