@@ -52,7 +52,6 @@ const Category = () => (
   <>
     <Header />
     <ListagemProdutos produtos={produtos} />
-    {/* <ProductList games={promocoes} title="Promoções" /> */}
   </>
 )
 

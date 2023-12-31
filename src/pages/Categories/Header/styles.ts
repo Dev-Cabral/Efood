@@ -1,18 +1,11 @@
 import styled from 'styled-components'
-// import { TagContainer } from '../../../asse'
 import { cores } from '../../../styles'
-// import { TagContainer } from '../../../components/Tag/styles'
 
 export const Imagem = styled.div`
   width: 100%;
   height: 500px;
   margin-top: -120px;
   margin-bottom: 84px;
-
-   {
-    // position: absolute;
-    // top: 32px;
-  }
 `
 export const Imagem2 = styled.div`
   width: 100%;
@@ -21,11 +14,6 @@ export const Imagem2 = styled.div`
 
   position: absolute;
   top: 32px;
-
-   {
-    // position: absolute;
-    // top: 32px;
-  }
 `
 
 export const Italiana = styled.div`
@@ -54,23 +42,28 @@ export const Titulo = styled.h1`
 `
 
 export const Restaurante = styled.div`
-  width: 126px;
+  width: 100%;
   height: 58px;
-  padding-top: 120px;
+  padding-top: 150px;
   margin-left: 172px;
+  display: flex;
+  justfy-content: space-betwenn;
+  align-items: center;
 
-  p {
-    color: ${cores.vermelho};
-    font-weight: 900;
-    font-size: 18px;
-    padding-top: 60px;
+  nav {
+    padding-top: 64px;
+    a {
+      color: ${cores.vermelho};
+      font-weight: 900;
+      font-size: 18px;
+      text-decoration: none;
+    }
   }
 `
-export const Car = styled.nav`
-  width: 256px;
+export const Car = styled.div`
+  width: 100%;
   height: 58px;
-  padding-top: 20px;
-  margin-left: 992px;
+  padding-top: 50px;
   color: ${cores.vermelho};
   font-weight: 900;
   font-size: 18px;
@@ -79,29 +72,9 @@ export const Car = styled.nav`
 export const Efood = styled.div`
   width: 156px;
   height: 22px;
-  padding-top: 40px;
-  margin-left: 622px;
-`
+  margin: 0px 322px;
 
-export const Precos = styled.h2`
-  // color: ${cores.vermelho};
-  // font-size: 24px;
-  // margin-top: 24px;
-
-  // span {
-  //   text-decoration: line-through;
-  // }
-`
-export const Frase = styled.h2`
-  color: ${cores.vermelho};
-  font-weight: 900;
-  font-size: 34px;
-  text-align: center;
-`
-export const DivFrase = styled.div`
-  width: 540px;
-  height: 84px;
-  display: block;
-  margin-left: 414px;
-  margin-top: 186px;
+  img {
+    padding-top: 10px;
+  }
 `

@@ -20,7 +20,7 @@ type Props = {
 }
 
 const Product = ({ title, category, system, description, image }: Props) => (
-  <div>
+  <div className="container">
     <Destaque>Destaque da semana</Destaque>
     <Card>
       <img src={image} alt={title} />

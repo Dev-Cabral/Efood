@@ -20,29 +20,11 @@ export const GlobalCss = createGlobalStyle`
     list-style: none;
   }
 
-  body {
-    background-color: ${cores.branca};
-    // color: ${cores.branca};
-    // padding-top: 40px;
-  }
-
   .container {
     background-color: ${cores.rosaFundo};
     max-width: 1366px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
-  }
-
-  .destaque {
-    background-color: ${cores.vermelho};
-    width: 150px;
-    top: 20px;
-    left: 220px;
-    position: absolute;
-    display: flex;
-    color: ${cores.branca};
-    font-size: 12px;
-    padding: 4px;
-    text-align: center;
-    padding: 6px 16px;
   }
 `

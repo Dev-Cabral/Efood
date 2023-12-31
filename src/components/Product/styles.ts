@@ -76,13 +76,12 @@ export const Categoria = styled.div`
 export const Destaque = styled.h3`
   background-color: ${cores.vermelho};
   width: 150px;
+  height: auto;
   top: 435px;
-  left: 540px;
+  left: 390px;
   position: absolute;
-  display: flex;
   color: ${cores.branca};
   font-size: 12px;
-  padding: 4px;
   text-align: center;
   padding: 6px 16px;
 `

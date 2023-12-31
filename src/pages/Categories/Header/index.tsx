@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   Imagem,
   Efood,
@@ -15,14 +16,18 @@ import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.pn
 const Header = () => (
   <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
     <Restaurante>
-      <p>Restaurantes</p>
+      <nav>
+        <a href="">
+          <Link to="/restaurante">Restaurantes</Link>
+        </a>
+      </nav>
+      <Efood>
+        <img src={logo} alt="EFOOD" />
+      </Efood>
+      <Car>
+        <p>0 - produtos(s) no carrinho</p>
+      </Car>
     </Restaurante>
-    <Efood>
-      <img src={logo} alt="EFOOD" />
-    </Efood>
-    <Car>
-      <a href="#"></a>0 - produtos(s) no carrinho
-    </Car>
     <Imagem2>
       <Italiana>
         <h2>Italiana</h2>
