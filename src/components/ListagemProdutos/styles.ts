@@ -2,15 +2,14 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const List = styled.ul`
-  width: 1024px;
   background-color: ${cores.rosaFundo};
   color: ${cores.branca};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
+  column-gap: 28px;
   margin-top: 10px;
   border: 1px solide ${cores.vermelho};
-  margin-left: 172px;
+  margin-left: 340px;
   height: 890px;
   width: 1024px;
 `

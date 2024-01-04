@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Imagem = styled.div`
-  max-width: 1366px;
   width: 100%;
   height: 100%;
   margin-top: -24px;
@@ -16,7 +15,7 @@ export const Imagem = styled.div`
 export const Efood = styled.div`
   width: 126px;
   height: 58px;
-  margin-left: 622px;
+  margin-left: 782px;
 
   img {
     padding-top: 80px;
@@ -50,7 +49,7 @@ export const DivFrase = styled.div`
   width: 540px;
   height: 104px;
   display: block;
-  margin-left: 414px;
+  margin-left: 580px;
   margin-top: 186px;
 
   @media (max-width: 640px) {

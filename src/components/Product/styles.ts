@@ -92,10 +92,10 @@ export const Categoria = styled.div`
 `
 export const Destaque = styled.div`
   background-color: ${cores.vermelho};
-  max-width: 150px;
-  width: 100%;
-  top: 400px;
-  left: 390px;
+  // max-width: 150px;
+  // width: 100%;
+  top: 399px;
+  left: 560px;
   position: absolute;
   color: ${cores.branca};
   font-size: 12px;

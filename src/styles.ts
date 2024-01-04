@@ -22,7 +22,7 @@ export const GlobalCss = createGlobalStyle`
 
   .container {
     background-color: ${cores.rosaFundo};
-    max-width: 1366px;
+    max-width: 1674px;
     width: 100%;
     height: 100%;
     margin: 0 auto;

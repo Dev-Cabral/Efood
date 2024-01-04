@@ -9,7 +9,7 @@ export const List = styled.ul`
   column-gap: 28px;
   margin-top: 40px;
   border: 2px;
-  margin-left: 172px;
+  margin-left: 332px;
 
   @media (max-width: 640px) {
     display: grid;
@@ -17,7 +17,7 @@ export const List = styled.ul`
     column-gap: 28px;
     margin-top: 40px;
     border: 2px;
-    margin-left: 200px;
+    margin-left: 150px;
   }
 `
 

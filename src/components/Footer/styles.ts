@@ -28,7 +28,7 @@ export const Links = styled.ul`
   width: 126px;
   height: 58px;
   padding-top: 40px;
-  margin-left: 642px;
+  margin-left: 806px;
   margin-top: 24px;
 
   img {
@@ -53,7 +53,7 @@ export const FooterSection = styled.div`
 
   p {
     color: ${cores.vermelho};
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     margin-top: 128px;
     margin-left: 80px;
@@ -79,7 +79,7 @@ export const Efood = styled.div`
   width: 126px;
   height: 58px;
   padding-top: 40px;
-  margin-left: 622px;
+  margin-left: 782px;
 
   @media (max-width: 640px) {
     width: 126px;

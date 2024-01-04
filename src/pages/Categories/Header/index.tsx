@@ -14,7 +14,8 @@ import bannerImg from '../../../asserts/images/fundo.png'
 import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.png'
 
 const Header = () => (
-  <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
+  <Imagem>
+    <img src={bannerImg} alt="" />
     <Restaurante>
       <nav>
         <a href="">
