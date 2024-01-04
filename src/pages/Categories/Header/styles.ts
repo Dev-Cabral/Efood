@@ -88,8 +88,8 @@ export const Efood = styled.div`
   margin: 0px 322px;
 
   img {
-    width: 146px;
-    padding-top: 10px;
-    height: 100px;
+    width: 128px;
+    height: 60px;
+    margin-top: 32px;
   }
 `
