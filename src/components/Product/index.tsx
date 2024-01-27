@@ -21,7 +21,9 @@ type Props = {
 
 const Product = ({ title, category, system, description, image }: Props) => (
   <div className="container">
-    <Destaque>Destaque da semana</Destaque>
+    <Destaque>
+      <div>Japonesa</div> <div>Destaque da semana</div>
+    </Destaque>
     <Card>
       <img src={image} alt={title} />
       <Categoria>

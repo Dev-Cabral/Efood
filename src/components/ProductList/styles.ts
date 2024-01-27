@@ -2,14 +2,14 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const List = styled.ul`
-  width: 1024px;
+  // width: 1024px;
   color: ${cores.vermelho};
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 28px;
-  margin-top: 40px;
+  column-gap: 6px;
+  margin: 40px 78px;
   border: 2px;
-  margin-left: 332px;
+  // margin-left: 332px;
 
   @media (max-width: 640px) {
     display: grid;

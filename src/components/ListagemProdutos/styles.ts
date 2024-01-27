@@ -6,12 +6,12 @@ export const List = styled.ul`
   color: ${cores.branca};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 28px;
+  // column-gap: 28px;
   margin-top: 10px;
   border: 1px solide ${cores.vermelho};
-  margin-left: 340px;
-  height: 890px;
-  width: 1024px;
+  margin: 0px 126px;
+  // height: 890px;
+  // width: 1024px;
 `
 
 export const Title = styled.h2`

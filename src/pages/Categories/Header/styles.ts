@@ -2,30 +2,21 @@ import styled from 'styled-components'
 import { cores } from '../../../styles'
 
 export const HeaderBar = styled.div`
-  max-width: 1024px;
-  // width: 100%;
+  // max-width: 1024px;
 `
 
 export const Imagem = styled.div`
-  height: 580px;
-  margin-top: -120px;
-  margin-bottom: 84px;
-
   img {
     width: 100%;
   }
 `
 export const Imagem2 = styled.div`
-  width: 100%;
+  // width: 100%;
   height: 280px;
   margin-top: 98px;
 
   position: absolute;
   top: 32px;
-
-  // img {
-  //   width: 100%;
-  // }
 `
 
 export const Italiana = styled.div`
@@ -33,8 +24,7 @@ export const Italiana = styled.div`
   height: 34px;
   position: absolute;
   top: 32px;
-
-  margin-left: 170px;
+  left: 170px;
 
   h2 {
     color: ${cores.cinzaClaro};
@@ -49,15 +39,14 @@ export const Titulo = styled.h1`
   font-weight: 900;
   font-size: 32px;
   position: absolute;
-  top: 288px;
+  top: 232px;
   left: 170px;
 `
 
 export const Restaurante = styled.div`
-  // width: 100%;
   height: 58px;
   padding-top: 150px;
-  margin-left: 352px;
+  margin: -21px 164px;
   display: flex;
   justfy-content: space-betwenn;
   align-items: center;
@@ -80,7 +69,10 @@ export const Car = styled.div`
   color: ${cores.vermelho};
   font-weight: 900;
   font-size: 18px;
-  // margin-right: 24px;
+
+  p {
+    width: 220px;
+  }
 `
 
 export const Efood = styled.div`

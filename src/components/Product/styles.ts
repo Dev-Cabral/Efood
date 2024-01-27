@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Card = styled.div`
-  width: 472px;
-  height: 398px;
+  width: 554px;
+  height: 432px;
 
   margin: 24px 4px;
   background-color: ${cores.branca};
@@ -12,13 +12,6 @@ export const Card = styled.div`
 
   img {
     width: 100%;
-  }
-
-  @media (max-width: 640px) {
-    width: 684px;
-    height: 500px;
-
-    align-items: center;
   }
 `
 
@@ -65,8 +58,8 @@ export const Descricao = styled.p`
 export const Categoria = styled.div`
   background-color: ${cores.vermelho};
   width: 80px;
-  top: 10px;
-  left: 375px;
+  top: 8px;
+  left: 464px;
   position: absolute;
   display: flex;
   padding: 2px;
@@ -92,10 +85,12 @@ export const Categoria = styled.div`
 `
 export const Destaque = styled.div`
   background-color: ${cores.vermelho};
+  display: flex;
   // max-width: 150px;
   // width: 100%;
-  top: 399px;
-  left: 560px;
+  display: flex;
+  top: 386px;
+  left: 444px;
   position: absolute;
   color: ${cores.branca};
   font-size: 12px;
