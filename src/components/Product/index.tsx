@@ -8,7 +8,8 @@ import {
   Destaque,
   Estrela,
   Botao,
-  Titulo
+  Titulo,
+  Japonesa
 } from './styles'
 
 type Props = {
@@ -21,9 +22,8 @@ type Props = {
 
 const Product = ({ title, category, system, description, image }: Props) => (
   <div className="container">
-    <Destaque>
-      <div>Japonesa</div> <div>Destaque da semana</div>
-    </Destaque>
+    <Destaque>Destaque da semana</Destaque>
+    <Japonesa>Japonesa</Japonesa>
     <Card>
       <img src={image} alt={title} />
       <Categoria>

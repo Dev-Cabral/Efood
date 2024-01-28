@@ -86,29 +86,29 @@ export const Categoria = styled.div`
 export const Destaque = styled.div`
   background-color: ${cores.vermelho};
   display: flex;
-  // max-width: 150px;
-  // width: 100%;
+  margin-rigth: 2px;
   display: flex;
-  top: 386px;
-  left: 444px;
+  top: 384px;
+  left: 408px;
   position: absolute;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
   padding: 6px 16px;
   border: none;
-
-  @media (max-width: 640px) {
-    max-width: 150px;
-    top: 400px;
-    left: 620px;
-    position: absolute;
-    font-size: 12px;
-    text-align: center;
-    padding: 6px 16px;
-    border: none;
-  }
 `
+export const Japonesa = styled.div`
+  background-color: ${cores.vermelho};
+  top: 384px;
+  left: 558px;
+  position: absolute;
+  color: ${cores.branca};
+  font-size: 12px;
+  text-align: center;
+  padding: 6px 16px;
+  border: none;
+`
+
 export const Botao = styled.button`
   width: 82px;
   height: 24px;
