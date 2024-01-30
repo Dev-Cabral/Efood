@@ -1,19 +1,26 @@
 import styled from 'styled-components'
 import { cores } from '../../../styles'
 
-export const HeaderBar = styled.div`
-  // max-width: 1024px;
+export const ContainerHeader = styled.div`
+  background-color: ${cores.rosaFundo};
+  width: 100%;
+  position: relative;
 `
 
 export const Imagem = styled.div`
+  position: absolute;
+  width: 100%;
+
   img {
     width: 100%;
+    margin-bottom: 250px;
   }
 `
 export const Imagem2 = styled.div`
-  // width: 100%;
-  height: 280px;
+  width: 100%;
+  // height: 580px;
   margin-top: 98px;
+  // margin-bottom: 450px;
 
   position: absolute;
   top: 32px;
@@ -50,6 +57,9 @@ export const Restaurante = styled.div`
   display: flex;
   justfy-content: space-betwenn;
   align-items: center;
+  position: absolute;
+  top: 354px;
+  left: 0px;
 
   nav {
     padding-top: 54px;

@@ -4,14 +4,22 @@ import { cores } from '../../styles'
 export const Card = styled.div`
   width: 320px;
   height: 358px;
-  margin: 24px 4px;
   background-color: ${cores.vermelho};
   border: 2px solid ${cores.vermelho};
+  margin-top: 450px;
 
   img {
     margin: 8px 8px;
     width: 95%;
   }
+`
+export const ListProduto = styled.ul`
+  // color: ${cores.vermelho};
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // column-gap: 6px;
+  // // margin-top: 480px;
+  // border: 2px;
 `
 
 export const Estrela = styled.div`

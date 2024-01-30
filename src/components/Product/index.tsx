@@ -9,7 +9,8 @@ import {
   Estrela,
   Botao,
   Titulo,
-  Japonesa
+  Japonesa,
+  Container
 } from './styles'
 
 type Props = {
@@ -21,7 +22,7 @@ type Props = {
 }
 
 const Product = ({ title, category, system, description, image }: Props) => (
-  <div className="container">
+  <Container>
     <Destaque>Destaque da semana</Destaque>
     <Japonesa>Japonesa</Japonesa>
     <Card>
@@ -49,7 +50,7 @@ const Product = ({ title, category, system, description, image }: Props) => (
         </nav>
       </div>
     </Card>
-  </div>
+  </Container>
 )
 
 export default Product

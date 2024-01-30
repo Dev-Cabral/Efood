@@ -1,6 +1,12 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
+export const Container = styled.div`
+  background-color: ${cores.rosaFundo};
+  width: 100%;
+  position: relative;
+`
+
 export const Card = styled.div`
   width: 554px;
   height: 432px;
@@ -84,29 +90,30 @@ export const Categoria = styled.div`
   }
 `
 export const Destaque = styled.div`
+  position: absolute;
+  top: 34px;
+  right: 100px;
   background-color: ${cores.vermelho};
   display: flex;
   margin-rigth: 2px;
-  display: flex;
-  top: 384px;
-  left: 408px;
-  position: absolute;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
   padding: 6px 16px;
   border: none;
+  z-index: 1;
 `
 export const Japonesa = styled.div`
-  background-color: ${cores.vermelho};
-  top: 384px;
-  left: 558px;
   position: absolute;
+  background-color: ${cores.vermelho};
+  top: 34px;
+  right: 8px;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
   padding: 6px 16px;
   border: none;
+  z-index: 1;
 `
 
 export const Botao = styled.button`

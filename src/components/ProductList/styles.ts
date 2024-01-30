@@ -1,24 +1,19 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
+export const ProductContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 export const List = styled.ul`
-  // width: 1024px;
   color: ${cores.vermelho};
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 6px;
-  margin: 40px 78px;
+  margin-top: 80px;
   border: 2px;
-  // margin-left: 332px;
-
-  @media (max-width: 640px) {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 28px;
-    margin-top: 40px;
-    border: 2px;
-    margin-left: 150px;
-  }
 `
 
 export const Title = styled.h2`

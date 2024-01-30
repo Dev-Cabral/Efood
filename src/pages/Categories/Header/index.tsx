@@ -6,7 +6,8 @@ import {
   Restaurante,
   Car,
   Italiana,
-  Titulo
+  Titulo,
+  ContainerHeader
 } from './styles'
 
 import logo from '../../../asserts/images/logo.png'
@@ -14,6 +15,7 @@ import bannerImg from '../../../asserts/images/fundo.png'
 import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.png'
 
 const Header = () => (
+  // <ContainerHeader>
   <Imagem>
     <img src={bannerImg} alt="" />
     <Restaurante>
@@ -37,6 +39,7 @@ const Header = () => (
       <img src={presentacao} alt="Apresentação" />
     </Imagem2>
   </Imagem>
+  // </ContainerHeader>
 )
 
 export default Header

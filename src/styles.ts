@@ -22,23 +22,7 @@ export const GlobalCss = createGlobalStyle`
 
   .container {
     background-color: ${cores.rosaFundo};
-    max-width: 1674px;
-    // width: 100%;
-    // height: 100%;
+    width: 100%;
     margin: 0 auto;
-
-    @media (max-width: 640px) {
-      width: 1188px;
-      align-items: center;
-    }
   }
-
-  // .efood {
-  //   width: 100%;
-  //   align-items: center;
-
-  //   img {
-  //     align-items: center;
-  //   }
-  // }
 `
