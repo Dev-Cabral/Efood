@@ -1,26 +1,29 @@
 class Home {
+  highlight: boolean
   category: string
   description: string
   image: string
-  system: string
+  foodType: string
   title: string
   id: number
   estrela?: string
 
   constructor(
     id: number,
+    highlight: boolean,
     category: string,
     description: string,
     image: string,
-    system: string,
+    foodType: string,
     title: string,
     estrela?: string
   ) {
     this.id = id
+    this.highlight = highlight
     this.category = category
     this.description = description
     this.image = image
-    this.system = system
+    this.foodType = foodType
     this.title = title
     this.estrela = estrela
   }

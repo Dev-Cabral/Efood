@@ -1,5 +1,4 @@
 import Home from '../../Models/Home'
-import { Container } from '../Footer/styles'
 import Product from '../Product'
 import { List, ProductContainer } from './styles'
 
@@ -14,11 +13,12 @@ const ProductList = ({ home }: Props) => (
       {home.map((home) => (
         <Product
           key={home.id}
+          highlight={home.highlight}
           category={home.category}
           description={home.description}
           image={home.image}
           title={home.title}
-          system={home.system}
+          foodType={home.foodType}
         />
       ))}
     </List>

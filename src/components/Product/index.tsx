@@ -9,26 +9,32 @@ import {
   Estrela,
   Botao,
   Titulo,
-  Japonesa,
   Container
 } from './styles'
 
 type Props = {
+  highlight: boolean
   title: string
   category: string
-  system: string
+  foodType: string
   description: string
   image: string
 }
 
-const Product = ({ title, category, system, description, image }: Props) => (
+const Product = ({
+  highlight,
+  title,
+  category,
+  foodType,
+  description,
+  image
+}: Props) => (
   <Container>
-    <Destaque>Destaque da semana</Destaque>
-    <Japonesa>Japonesa</Japonesa>
+    {highlight && <Destaque>Destaque da semana</Destaque>}
     <Card>
       <img src={image} alt={title} />
       <Categoria>
-        <h3>{system}</h3>
+        <h3>{foodType}</h3>
       </Categoria>
       <Titulo>
         {title}
