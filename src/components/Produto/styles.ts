@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-export const Card = styled.div`
+export const Card = styled.ul`
   width: 320px;
   height: 358px;
   background-color: ${cores.vermelho};
   border: 2px solid ${cores.vermelho};
-  margin-top: 450px;
+  // margin-top: 450px;
 
   img {
     margin: 8px 8px;
@@ -66,7 +66,6 @@ export const Categoria = styled.div`
   width: 80px;
   top: 20px;
   left: 390px;
-  position: absolute;
   display: flex;
   padding: 2px 8px;
 
@@ -82,7 +81,7 @@ export const Destaque = styled.h3`
   width: 150px;
   top: 20px;
   left: 220px;
-  position: absolute;
+  // position: absolute;
   display: flex;
   color: ${cores.branca};
   font-size: 12px;

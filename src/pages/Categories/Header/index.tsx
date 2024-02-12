@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom'
 import {
-  Imagem,
+  Container,
   Efood,
   Imagem2,
-  Restaurante,
   Car,
   Italiana,
   Titulo,
@@ -15,10 +14,9 @@ import bannerImg from '../../../asserts/images/fundo.png'
 import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.png'
 
 const Header = () => (
-  // <ContainerHeader>
-  <Imagem>
+  <Container>
     <img src={bannerImg} alt="" />
-    <Restaurante>
+    <ContainerHeader>
       <nav>
         <a href="">
           <Link to="/">Restaurantes</Link>
@@ -30,7 +28,7 @@ const Header = () => (
       <Car>
         <p>0 - produtos(s) no carrinho</p>
       </Car>
-    </Restaurante>
+    </ContainerHeader>
     <Imagem2>
       <Italiana>
         <h2>Italiana</h2>
@@ -38,8 +36,7 @@ const Header = () => (
       <Titulo>La Dolce Vita Trattoria</Titulo>
       <img src={presentacao} alt="Apresentação" />
     </Imagem2>
-  </Imagem>
-  // </ContainerHeader>
+  </Container>
 )
 
 export default Header

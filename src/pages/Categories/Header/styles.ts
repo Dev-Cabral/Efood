@@ -1,37 +1,31 @@
 import styled from 'styled-components'
 import { cores } from '../../../styles'
 
-export const ContainerHeader = styled.div`
-  background-color: ${cores.rosaFundo};
+export const Container = styled.div`
   width: 100%;
-  position: relative;
-`
-
-export const Imagem = styled.div`
-  position: absolute;
-  width: 100%;
+  align-items: center;
+  margin-top: -24px;
+  text-align: center;
 
   img {
     width: 100%;
-    margin-bottom: 250px;
   }
 `
 export const Imagem2 = styled.div`
   width: 100%;
-  // height: 580px;
+  height: 502px;
   margin-top: 98px;
-  // margin-bottom: 450px;
 
   position: absolute;
   top: 32px;
 `
 
 export const Italiana = styled.div`
-  width: 102px;
   height: 34px;
-  position: absolute;
-  top: 32px;
-  left: 170px;
+  position: relative;
+  top: 88px;
+  right: 444px;
+  z-index: 1;
 
   h2 {
     color: ${cores.cinzaClaro};
@@ -45,53 +39,56 @@ export const Titulo = styled.h1`
   line-height: 38px;
   font-weight: 900;
   font-size: 32px;
-  position: absolute;
+  position: relative;
   top: 232px;
-  left: 170px;
+  right: 344px;
+
+  z-index: 1;
 `
 
-export const Restaurante = styled.div`
-  height: 58px;
-  padding-top: 150px;
-  margin: -21px 164px;
+export const ContainerHeader = styled.div`
   display: flex;
-  justfy-content: space-betwenn;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: -24px;
+  text-align: center;
   position: absolute;
-  top: 354px;
-  left: 0px;
+  top: 0;
+  left: 0;
 
   nav {
-    padding-top: 54px;
-    height: 950px;
+    margin-bottom: 114px;
 
     a {
       color: ${cores.vermelho};
       font-weight: 900;
       font-size: 18px;
       text-decoration: none;
+      cursor: pointe;
     }
   }
 `
 export const Car = styled.div`
-  height: 950px;
-  padding-top: 50px;
-  color: ${cores.vermelho};
-  font-weight: 900;
-  font-size: 18px;
+  height: 34px;
+  position: relative;
+  top: 0px;
+  margin-bottom: 104px;
+  background-color: ${cores.rosa};
 
   p {
-    width: 220px;
+    color: ${cores.vermelho};
+    font-weight: 900;
+    font-size: 18px;
   }
 `
 
 export const Efood = styled.div`
-  height: 950px;
-  margin: 0px 322px;
+  height: 336px;
 
   img {
-    width: 128px;
-    height: 60px;
-    margin-top: 32px;
+    padding-top: 80px;
+
+  }
   }
 `
