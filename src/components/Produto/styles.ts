@@ -6,20 +6,12 @@ export const Card = styled.ul`
   height: 358px;
   background-color: ${cores.vermelho};
   border: 2px solid ${cores.vermelho};
-  // margin-top: 450px;
+  position: relative;
 
   img {
     margin: 8px 8px;
     width: 95%;
   }
-`
-export const ListProduto = styled.ul`
-  // color: ${cores.vermelho};
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // column-gap: 6px;
-  // // margin-top: 480px;
-  // border: 2px;
 `
 
 export const Estrela = styled.div`
@@ -107,4 +99,12 @@ export const Botao = styled.button`
     border: none;
     font-weight: 700;
   }
+`
+
+export const Container = styled.div`
+  width: 1024px;
+  height; 344px;
+  top: 490px;
+  left: 172px;
+  background-color: ${cores.vermelho};
 `

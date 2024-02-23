@@ -16,7 +16,7 @@ import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.pn
 const Header = () => (
   <Container>
     <img src={bannerImg} alt="" />
-    <ContainerHeader>
+    <ContainerHeader className="overlay">
       <nav>
         <a href="">
           <Link to="/">Restaurantes</Link>

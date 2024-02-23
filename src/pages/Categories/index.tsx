@@ -2,6 +2,7 @@ import Header from './Header'
 import pizza from '../../asserts/images/pizza.png'
 import Produtos from '../../Models/Produtos'
 import ListagemProdutos from '../../components/ListagemProdutos'
+import Modal from './Modal'
 
 const produtos: Produtos[] = [
   {
@@ -52,6 +53,7 @@ const Category = () => (
   <>
     <Header />
     <ListagemProdutos produtos={produtos} />
+    <Modal />
   </>
 )
 
