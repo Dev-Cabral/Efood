@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 import { Card, Descricao, Botao, Titulo } from './styles'
 
@@ -8,19 +9,21 @@ type Props = {
   image: string
 }
 
-const Produto = ({ title, description, image }: Props) => (
-  <Card>
-    <img src={image} alt={title} />
-    <Titulo>{title}</Titulo>
-    <Descricao>{description}</Descricao>
-    <div>
-      <Botao>
-        <a href="">
-          <Link to="/saibaMais">Mais detalhes</Link>
-        </a>
-      </Botao>
-    </div>
-  </Card>
-)
+const Produto = ({ title, description, image }: Props) => {
+  const [modalAberto, setModalAberto] = useState(false)
+
+  return (
+    <Card className={modalAberto ? 'visible' : ''}>
+      <img src={image} alt={title} />
+      <Titulo>{title}</Titulo>
+      <Descricao>{description}</Descricao>
+      <div>
+        <Botao type="button" onClick={() => setModalAberto(true)}>
+          Comprar
+        </Botao>
+      </div>
+    </Card>
+  )
+}
 
 export default Produto

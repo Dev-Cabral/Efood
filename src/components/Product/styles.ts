@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const Card = styled.div`
-  background-color: rgba(0, 0, 0, 0.73);
+  // background-color: rgba(0, 0, 0, 0.73);
 
   width: 554px;
   height: 432px;

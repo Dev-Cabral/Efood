@@ -73,7 +73,6 @@ export const Destaque = styled.h3`
   width: 150px;
   top: 20px;
   left: 220px;
-  // position: absolute;
   display: flex;
   color: ${cores.branca};
   font-size: 12px;

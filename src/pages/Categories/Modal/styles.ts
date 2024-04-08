@@ -3,6 +3,22 @@ import { cores } from '../../../styles'
 
 export const Container = styled.div`
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+
+  &.visible {
+    display: flex;
+  }
+`
+export const ModalContainer = styled.div`
+  position: fixed;
   top: 250px;
   left: 166px;
   max-width: 1024px;
@@ -12,11 +28,16 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   background-color: ${cores.vermelho};
-`
-export const ModalContainer = styled.div`
   display: flex;
   color: ${cores.branca};
   width: 100%;
+  z-index: 2;
+`
+
+export const ConteudoDoModal = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
 `
 
 export const PizzaImg = styled.div`

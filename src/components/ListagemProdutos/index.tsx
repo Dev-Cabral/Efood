@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Produtos from '../../Models/Produtos'
 import { Container } from '../Footer/styles'
 import { ProductContainer } from '../ProductList/styles'
@@ -8,19 +9,23 @@ export type Props = {
   produtos: Produtos[]
 }
 
-const ListagemProdutos = ({ produtos }: Props) => (
-  <ProductContainer>
-    <List>
-      {produtos.map((produtos) => (
-        <Produto
-          key={produtos.id}
-          description={produtos.description}
-          image={produtos.image}
-          title={produtos.title}
-        />
-      ))}
-    </List>
-  </ProductContainer>
-)
+const ListagemProdutos = ({ produtos }: Props) => {
+  const [modalAberto, setModalAberto] = useState(false)
+
+  return (
+    <ProductContainer>
+      <List>
+        {produtos.map((produtos) => (
+          <Produto
+            key={produtos.id}
+            description={produtos.description}
+            image={produtos.image}
+            title={produtos.title}
+          />
+        ))}
+      </List>
+    </ProductContainer>
+  )
+}
 
 export default ListagemProdutos

@@ -9,8 +9,6 @@ export const List = styled.ul`
   gap: 28px;
   border: 1px solide ${cores.vermelho};
   padding-top: 190px;
-
-  background-color: rgba(0, 0, 0, 0.73);
 `
 
 export const Title = styled.h2`
