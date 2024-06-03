@@ -87,17 +87,14 @@ export const Car = styled.div`
     z-index: 1;
     font-weight: 900;
     font-size: 18px;
-    // background-color: rgba(0, 0, 0, 0.73);
   }
 `
 
 export const Efood = styled.div`
-  // background-color: rgba(0, 0, 0, 0.73);
-
+  margin-left: 84px;
   height: 336px;
 
   img {
     padding-top: 80px;
-    // background-color: rgba(0, 0, 0, 0.73);
   }
 `

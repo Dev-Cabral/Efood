@@ -86,17 +86,18 @@ export const Botao = styled.button`
   padding: 4px;
   margin-left: 4px;
   margin-bottom: 4px;
-  background-color: ${cores.rosa};
+  // background-color: ${cores.rosa};
   border: none;
   font-weight: bold;
 
-  a {
+  p {
     color: ${cores.vermelho};
     text-decoration: none;
     font-size: 14px;
     text-align: center;
     border: none;
     font-weight: 700;
+    cursor: pointer;
   }
 `
 
