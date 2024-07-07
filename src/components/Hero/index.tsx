@@ -1,4 +1,4 @@
-import { Imagem, Efood, DivFrase } from './styles'
+import { Imagem, Efood } from './styles'
 
 import logo from '../../asserts/images/logo.png'
 import bannerImg from '../../asserts/images/fundo.png'

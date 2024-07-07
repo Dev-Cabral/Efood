@@ -7,7 +7,7 @@ export const Container = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 2;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -18,20 +18,14 @@ export const Container = styled.div`
   }
 `
 export const ModalContainer = styled.div`
-  position: fixed;
+  position: absolute;
   top: 250px;
   left: 166px;
   max-width: 1024px;
-  width: 100%;
-  height: 280px;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
   background-color: ${cores.vermelho};
   display: flex;
   color: ${cores.branca};
   width: 100%;
-  z-index: 2;
 `
 
 export const ConteudoDoModal = styled.div`
@@ -41,10 +35,11 @@ export const ConteudoDoModal = styled.div`
 `
 
 export const PizzaImg = styled.div`
+  width: 200%;
+
   img {
-    height: 240px;
-    width: 280px;
-    margin: 22px;
+    height: 254px;
+    width: 374px;
     object-fit: cover;
   }
 `
@@ -52,27 +47,25 @@ export const PizzaImg = styled.div`
 export const HeaderModal = styled.div`
   width: 100%;
   display: flex;
+  justify-content: space-between;
 
   h4 {
+    margin-top: 16px;
     height: 22px;
-    margin-bottom: 16px;
     font-weight: bold;
+  }
+
+  img {
+    margin-bottom: 36px;
+    height: 16px;
+    cursor: pointer;
   }
 `
 export const ContainerBody = styled.div`
-  width: 100%;
-
-  img {
-    widht: 16px;
-    height: 16px;
-    margin-left: 680px;
-    margin-top: 4px;
-    cursor: pointer;
-  }
-
   p {
     width: 100%;
     font-size: 14px;
+    margin-bottom: 16px;
   }
 
   button {
@@ -81,7 +74,8 @@ export const ContainerBody = styled.div`
     background-color: ${cores.rosaFundo};
     color: ${cores.vermelho};
     border: none;
-    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-top: 10px;
     font-weight: bold;
     padding: 4px;
   }

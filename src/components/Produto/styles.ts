@@ -10,7 +10,7 @@ export const Card = styled.ul`
 
   img {
     margin: 8px 8px;
-    width: 95%;
+    max-width: 95%;
   }
 `
 
@@ -86,7 +86,7 @@ export const Botao = styled.button`
   padding: 4px;
   margin-left: 4px;
   margin-bottom: 4px;
-  // background-color: ${cores.rosa};
+  cursor: pointer;
   border: none;
   font-weight: bold;
 
@@ -99,6 +99,10 @@ export const Botao = styled.button`
     font-weight: 700;
     cursor: pointer;
   }
+`
+export const ButtonCar = styled.button`
+cursor pointer;
+margin: 0;
 `
 
 export const Container = styled.div`

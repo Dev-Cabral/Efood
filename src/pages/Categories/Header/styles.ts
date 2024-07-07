@@ -6,7 +6,6 @@ export const Container = styled.div`
   align-items: center;
   margin-top: -24px;
   text-align: center;
-  // background-color: rgba(0, 0, 0, 0.73);
 
   img {
     width: 100%;
@@ -16,7 +15,6 @@ export const Imagem2 = styled.div`
   width: 100%;
   height: 502px;
   margin-top: 98px;
-  // background-color: rgba(0, 0, 0, 0.73);
 
   position: absolute;
   top: 32px;
@@ -59,7 +57,6 @@ export const ContainerHeader = styled.div`
   top: 0;
   left: 0;
   z-index: 0;
-  // background-color: rgba(0, 0, 0, 0.73);
 
   nav {
     margin-bottom: 114px;
@@ -74,13 +71,10 @@ export const ContainerHeader = styled.div`
   }
 `
 export const Car = styled.div`
-  // background-color: rgba(0, 0, 0, 0.73);
-
   height: 34px;
   position: relative;
   top: 0px;
   margin-bottom: 104px;
-  // background-color: ${cores.rosa};
 
   p {
     color: ${cores.vermelho};

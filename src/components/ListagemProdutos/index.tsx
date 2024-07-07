@@ -1,6 +1,4 @@
-// import { useState } from 'react'
 import Produtos from '../../Models/Produtos'
-// import { Container } from '../Footer/styles'
 import { ProductContainer } from '../ProductList/styles'
 import Produto from '../Produto'
 import { List } from './styles'
@@ -10,8 +8,6 @@ export type Props = {
 }
 
 const ListagemProdutos = ({ produtos }: Props) => {
-  // const [modalAberto, setModalAberto] = useState(false)
-
   return (
     <ProductContainer>
       <List>
