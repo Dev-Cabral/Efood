@@ -13,31 +13,36 @@ import {
 } from './styles'
 
 type Props = {
-  highlight: boolean
-  title: string
-  category: string
-  foodType: string
-  description: string
-  image: string
+  id: number
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: number
+  descricao: string
+  capa: string
+  nome: string
+  cardapio: string[]
 }
 
 const Product = ({
-  highlight,
-  title,
-  category,
-  foodType,
-  description,
-  image
-}: Props) => (
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: number
+  descricao: string
+  capa: string
+  nome: string
+  cardapio: string[]
+}: Cardapio) => (
   <Container>
     {highlight && <Destaque>Destaque da semana</Destaque>}
     <Card>
-      <img src={image} alt={title} />
+      <img src={titulo} alt={titulo} />
       <Categoria>
-        <h3>{foodType}</h3>
+        <h3>{tipo}</h3>
       </Categoria>
       <Titulo>
-        {title}
+        {destacado}
         <Estrela>
           <h3>{category}</h3>
           <img src={estrela} alt="" />

@@ -1,31 +1,31 @@
 class Home {
-  highlight: boolean
-  category: string
-  description: string
-  image: string
-  foodType: string
-  title: string
   id: number
-  estrela?: string
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: number
+  descricao: string
+  capa: string
+  cardapio: string[]
 
   constructor(
     id: number,
-    highlight: boolean,
-    category: string,
-    description: string,
-    image: string,
-    foodType: string,
-    title: string,
-    estrela?: string
+    titulo: string,
+    destacado: boolean,
+    tipo: string,
+    avaliacao: number,
+    descricao: string,
+    capa: string,
+    cardapio: string[]
   ) {
     this.id = id
-    this.highlight = highlight
-    this.category = category
-    this.description = description
-    this.image = image
-    this.foodType = foodType
-    this.title = title
-    this.estrela = estrela
+    this.titulo = titulo
+    this.destacado = destacado
+    this.tipo = tipo
+    this.avaliacao = avaliacao
+    this.descricao = descricao
+    this.capa = capa
+    this.cardapio = cardapio
   }
 }
 
