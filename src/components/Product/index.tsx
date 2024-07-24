@@ -25,17 +25,17 @@ type Props = {
 }
 
 const Product = ({
-  titulo: string
-  destacado: boolean
-  tipo: string
-  avaliacao: number
-  descricao: string
-  capa: string
-  nome: string
-  cardapio: string[]
-}: Cardapio) => (
+  titulo,
+  destacado,
+  tipo,
+  avaliacao,
+  descricao,
+  capa,
+  nome,
+  cardapio
+}: Props) => (
   <Container>
-    {highlight && <Destaque>Destaque da semana</Destaque>}
+    {destacado && <Destaque>Destaque da semana</Destaque>}
     <Card>
       <img src={titulo} alt={titulo} />
       <Categoria>
@@ -44,11 +44,11 @@ const Product = ({
       <Titulo>
         {destacado}
         <Estrela>
-          <h3>{category}</h3>
+          <h3>{avaliacao}</h3>
           <img src={estrela} alt="" />
         </Estrela>
       </Titulo>
-      <Descricao>{description}</Descricao>
+      <Descricao>{descricao}</Descricao>
       <div>
         <nav>
           <Botao>

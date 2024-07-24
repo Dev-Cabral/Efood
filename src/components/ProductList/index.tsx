@@ -1,4 +1,3 @@
-import Home from '../../Models/Home'
 import { Cardapio } from '../../pages/Home'
 import Product from '../Product'
 import { List, ProductContainer } from './styles'
@@ -13,6 +12,7 @@ const ProductList = ({ prato }: Props) => (
       {prato.map((prato) => (
         <Product
           key={prato.id}
+          id={prato.id}
           nome={prato.nome}
           titulo={prato.titulo}
           destacado={prato.destacado}
@@ -20,6 +20,7 @@ const ProductList = ({ prato }: Props) => (
           avaliacao={prato.avaliacao}
           descricao={prato.descricao}
           capa={prato.capa}
+          cardapio={prato.cardapio}
         />
       ))}
     </List>
