@@ -46,6 +46,7 @@ export const FooterSection = styled.div`
     font-size: 10px;
     text-align: center;
     margin-top: 128px;
+    width: 480px;
   }
   }
 `

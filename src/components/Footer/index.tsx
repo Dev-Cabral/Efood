@@ -1,4 +1,4 @@
-import { Container, Efood, FooterSection, Links } from './styles'
+import { Container, Efood, FooterSection, Links, Rodape } from './styles'
 import logo from '../../asserts/images/logo.png'
 import instagram from '../../asserts/images/instagram.png'
 import facebook from '../../asserts/images/facebook.png'
@@ -22,13 +22,13 @@ const Footer = () => (
             <img src={twiter} alt="Twiter" />
           </li>
         </Links>
-        <div>
+        <Rodape>
           <p>
             A efood é uma plataforma para divulgação de estabelecimentos, a
             responsabilidade pela entrega, qualidade dos produtos é toda do
             estabelecimento contratado.
           </p>
-        </div>
+        </Rodape>
       </FooterSection>
     </div>
   </Container>
