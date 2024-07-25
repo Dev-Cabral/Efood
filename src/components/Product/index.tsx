@@ -37,12 +37,12 @@ const Product = ({
   <Container>
     {destacado && <Destaque>Destaque da semana</Destaque>}
     <Card>
-      <img src={titulo} alt={titulo} />
+      <img src={capa} alt={capa} />
       <Categoria>
         <h3>{tipo}</h3>
       </Categoria>
       <Titulo>
-        {destacado}
+        {titulo}
         <Estrela>
           <h3>{avaliacao}</h3>
           <img src={estrela} alt="" />

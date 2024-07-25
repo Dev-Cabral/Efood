@@ -43,7 +43,7 @@ export const FooterSection = styled.div`
 
   p {
     color: ${cores.vermelho};
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
     margin-top: 128px;
   }
@@ -54,4 +54,8 @@ export const Efood = styled.div`
   height: 58px;
   padding-top: 40px;
   text-align: center;
+`
+
+export const Rodape = styled.div`
+  text-align: -webkit-center;
 `

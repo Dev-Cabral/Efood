@@ -8,16 +8,19 @@ export const Container = styled.div`
 `
 
 export const Card = styled.div`
-  width: 554px;
-  height: 432px;
+  width: 472px;
+  height: 438px;
+  top: 40px;
 
-  margin: 24px 4px;
+  margin: 40px 24px;
   background-color: ${cores.branca};
   border: 2px solid ${cores.vermelho};
   position: relative;
 
   img {
-    width: 100%;
+    width: 472px;
+    height: 217px;
+    object-fit: cover;
   }
 `
 
@@ -57,57 +60,58 @@ export const Descricao = styled.p`
   height: 88px;
   font-size: 14px;
   line-height: 22px;
-  display: flex;
-  margin: 4px 4px;
+  margin-left: 10px;
+  font-weight: 400;
 `
 
 export const Categoria = styled.div`
   background-color: ${cores.vermelho};
   width: 80px;
-  top: 8px;
-  left: 464px;
+  top: 12px;
+  left: 368px;
   position: absolute;
   display: flex;
-  padding: 2px;
+  padding: 6px;
   text-align: center;
+  justify-content: center;
 
   h3 {
     color: ${cores.branca};
     font-size: 12px;
-    padding: 4px;
+    font-weight: 700;
     text-align: center;
-    margin-left: 10px;
   }
 
-  @media (max-width: 640px) {
-    width: 80px;
-    top: 10px;
-    left: 585px;
-    position: absolute;
-    display: flex;
-    padding: 2px;
-    text-align: center;
-  }
+  // @media (max-width: 640px) {
+  //   width: 80px;
+  //   top: 10px;
+  //   left: 585px;
+  //   position: absolute;
+  //   display: flex;
+  //   padding: 2px;
+  //   text-align: center;
+  // }
 `
 export const Destaque = styled.div`
   position: absolute;
-  top: 34px;
-  right: 100px;
+  top: 94px;
+  right: 150px;
   background-color: ${cores.vermelho};
   display: flex;
   margin-rigth: 2px;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
-  padding: 6px 16px;
+  padding: 6px;
   border: none;
   z-index: 1;
+  font-weight: bold;
 `
 export const Japonesa = styled.div`
   position: absolute;
   background-color: ${cores.vermelho};
   top: 34px;
-  right: 8px;
+  right: 58px;
   color: ${cores.branca};
   font-size: 12px;
   text-align: center;
@@ -120,16 +124,17 @@ export const Botao = styled.button`
   width: 82px;
   height: 24px;
   padding: 4px;
-  margin-left: 4px;
+  margin-left: 10px;
   margin-bottom: 4px;
   background-color: ${cores.vermelho};
   border: none;
   font-weight: bold;
+  margin-top: 32px;
 
   a {
     color: ${cores.branca};
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     border: none;
   }

@@ -22,11 +22,13 @@ const Footer = () => (
             <img src={twiter} alt="Twiter" />
           </li>
         </Links>
-        <p>
-          A efood é uma plataforma para divulgação de estabelecimentos, a
-          responsabilidade pela entrega, qualidade dos produtos é toda do
-          estabelecimento contratado.
-        </p>
+        <div>
+          <p>
+            A efood é uma plataforma para divulgação de estabelecimentos, a
+            responsabilidade pela entrega, qualidade dos produtos é toda do
+            estabelecimento contratado.
+          </p>
+        </div>
       </FooterSection>
     </div>
   </Container>
