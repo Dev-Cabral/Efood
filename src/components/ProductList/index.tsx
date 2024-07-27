@@ -13,7 +13,6 @@ const ProductList = ({ prato }: Props) => (
         <Product
           key={prato.id}
           id={prato.id}
-          nome={prato.nome}
           titulo={prato.titulo}
           destacado={prato.destacado}
           tipo={prato.tipo}

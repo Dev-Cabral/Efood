@@ -12,7 +12,7 @@ import {
   Container
 } from './styles'
 
-type Props = {
+export type Props = {
   id: number
   titulo: string
   destacado: boolean
@@ -20,7 +20,6 @@ type Props = {
   avaliacao: number
   descricao: string
   capa: string
-  nome: string
   cardapio: string[]
 }
 
@@ -30,9 +29,7 @@ const Product = ({
   tipo,
   avaliacao,
   descricao,
-  capa,
-  nome,
-  cardapio
+  capa
 }: Props) => (
   <Container>
     {destacado && <Destaque>Destaque da semana</Destaque>}

@@ -14,9 +14,10 @@ const ListagemProdutos = ({ produtos }: Props) => {
         {produtos.map((produtos) => (
           <Produto
             key={produtos.id}
-            description={produtos.descricao}
-            image={produtos.capa}
-            title={produtos.titulo}
+            tipo={produtos.tipo}
+            descricao={produtos.descricao}
+            capa={produtos.capa}
+            titulo={produtos.titulo}
           />
         ))}
       </List>

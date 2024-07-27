@@ -18,6 +18,12 @@ export const Imagem2 = styled.div`
 
   position: absolute;
   top: 32px;
+
+  img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
 `
 
 export const Italiana = styled.div`
@@ -28,10 +34,11 @@ export const Italiana = styled.div`
   z-index: 1;
 
   h2 {
-    color: ${cores.cinzaClaro};
+    color: ${cores.cinza};
     line-height: 38px;
-    font-weight: 10;
     font-size: 32px;
+    font-weight: 100;
+    margin-top: 24px;
   }
 `
 export const Titulo = styled.h1`

@@ -11,7 +11,6 @@ import {
 
 import logo from '../../../asserts/images/logo.png'
 import bannerImg from '../../../asserts/images/fundo.png'
-import presentacao from '../../../asserts/images/apresentacao-imagem-de-fundo.png'
 import { useEffect, useState } from 'react'
 import { Cardapio } from '../../Home'
 
@@ -19,7 +18,7 @@ const Header = () => {
   const [prato, setPrato] = useState<Cardapio>()
 
   useEffect(() => {
-    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes').then(
+    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes/2').then(
       (res) => res.json().then((res) => setPrato(res))
     )
   }, [])
@@ -42,10 +41,10 @@ const Header = () => {
       </ContainerHeader>
       <Imagem2>
         <Italiana>
-          <h2>{prato?.titulo}</h2>
+          <h2>{prato?.tipo}</h2>
         </Italiana>
-        <Titulo>{prato?.tipo}</Titulo>
-        <img src={presentacao} alt="Apresentação" />
+        <Titulo>{prato?.titulo}</Titulo>
+        <img src={prato?.capa} alt="" />
       </Imagem2>
     </Container>
   )

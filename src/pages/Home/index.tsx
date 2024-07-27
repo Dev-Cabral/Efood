@@ -11,7 +11,6 @@ export type Cardapio = {
   avaliacao: number
   descricao: string
   capa: string
-  nome: string
   cardapio: string[]
 }
 

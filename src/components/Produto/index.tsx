@@ -14,16 +14,17 @@ import {
 } from '../../pages/Categories/Modal/styles'
 
 type Props = {
-  title: string
-  description: string
-  image: string
+  capa: string
+  descricao: string
+  tipo: string
+  titulo: string
 }
 
 type ModalState = {
   isVisible: boolean
 }
 
-const Produto = ({ title, description, image }: Props) => {
+const Produto = ({ capa, descricao, tipo, titulo }: Props) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false
   })
@@ -36,9 +37,9 @@ const Produto = ({ title, description, image }: Props) => {
 
   return (
     <Card>
-      <img src={image} alt={title} />
-      <Titulo>{title}</Titulo>
-      <Descricao>{description}</Descricao>
+      <img src={capa} alt={capa} />
+      <Titulo>{tipo}</Titulo>
+      <Descricao>{descricao}</Descricao>
       <Botao
         onClick={() => {
           setModal({
@@ -52,11 +53,11 @@ const Produto = ({ title, description, image }: Props) => {
         <ConteudoDoModal>
           <ModalContainer>
             <PizzaImg>
-              <img src={piza} alt="" />
+              <img src={capa} alt="" />
             </PizzaImg>
             <ContainerBody>
               <HeaderModal>
-                <h4>Pizza Marguerita</h4>
+                <h4>{titulo}</h4>
                 <img
                   src={close}
                   alt=""
