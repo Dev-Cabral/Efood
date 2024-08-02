@@ -1,7 +1,6 @@
 import { useState } from 'react'
 
 import { Card, Descricao, Botao, Titulo, ButtonCar } from './styles'
-import piza from '../../asserts/images/pizza.png'
 import close from '../../asserts/images/fechar.png'
 
 import {
@@ -12,19 +11,13 @@ import {
   ModalContainer,
   PizzaImg
 } from '../../pages/Categories/Modal/styles'
-
-type Props = {
-  capa: string
-  descricao: string
-  tipo: string
-  titulo: string
-}
+import { ItemProdutos } from '../../pages/Home'
 
 type ModalState = {
   isVisible: boolean
 }
 
-const Produto = ({ capa, descricao, tipo, titulo }: Props) => {
+const Produto = ({ foto, descricao, nome, id }: ItemProdutos) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false
   })
@@ -37,10 +30,11 @@ const Produto = ({ capa, descricao, tipo, titulo }: Props) => {
 
   return (
     <Card>
-      <img src={capa} alt={capa} />
-      <Titulo>{tipo}</Titulo>
+      <img src={foto} alt={foto} />
+      <Titulo>{nome}</Titulo>
       <Descricao>{descricao}</Descricao>
       <Botao
+        to={`/produto/${id}`}
         onClick={() => {
           setModal({
             isVisible: true
@@ -53,11 +47,11 @@ const Produto = ({ capa, descricao, tipo, titulo }: Props) => {
         <ConteudoDoModal>
           <ModalContainer>
             <PizzaImg>
-              <img src={capa} alt="" />
+              <img src={foto} alt="" />
             </PizzaImg>
             <ContainerBody>
               <HeaderModal>
-                <h4>{titulo}</h4>
+                <h4>{nome}</h4>
                 <img
                   src={close}
                   alt=""

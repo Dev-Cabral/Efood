@@ -19,7 +19,6 @@ const ProductList = ({ prato }: Props) => (
           avaliacao={prato.avaliacao}
           descricao={prato.descricao}
           capa={prato.capa}
-          cardapio={prato.cardapio}
         />
       ))}
     </List>

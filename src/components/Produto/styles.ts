@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
+import { Link } from 'react-router-dom'
 
 export const Card = styled.ul`
   width: 320px;
@@ -80,7 +81,7 @@ export const Destaque = styled.h3`
   text-align: center;
   padding: 6px 16px;
 `
-export const Botao = styled.button`
+export const Botao = styled(Link)`
   width: 304px;
   height: 24px;
   padding: 4px;

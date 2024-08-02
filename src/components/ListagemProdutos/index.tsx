@@ -1,28 +1,31 @@
-import { Cardapio } from '../../pages/Home'
+// import { ItemProdutos } from '../../pages/Categories'
+import { Cardapio, ItemProdutos } from '../../pages/Home'
 import { ProductContainer } from '../ProductList/styles'
 import Produto from '../Produto'
 import { List } from './styles'
 
 export type Props = {
-  produtos: Cardapio[]
+  listagem: Cardapio[]
+  lista: ItemProdutos[]
 }
 
-const ListagemProdutos = ({ produtos }: Props) => {
-  return (
-    <ProductContainer>
-      <List>
-        {produtos.map((produtos) => (
+const ListagemProdutos = ({ listagem }: Props) => (
+  <ProductContainer>
+    <List>
+      {listagem.map((lista) => (
+        <li key={lista.id}>
           <Produto
-            key={produtos.id}
-            tipo={produtos.tipo}
-            descricao={produtos.descricao}
-            capa={produtos.capa}
-            titulo={produtos.titulo}
+            foto={lista.foto}
+            descricao={lista.descricao}
+            porcao={lista.porcao}
+            nome={lista.nome}
+            preco={lista.preco}
+            id={lista.id}
           />
-        ))}
-      </List>
-    </ProductContainer>
-  )
-}
+        </li>
+      ))}
+    </List>
+  </ProductContainer>
+)
 
 export default ListagemProdutos

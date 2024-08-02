@@ -3,7 +3,20 @@ import ProductList from '../../components/ProductList'
 import Hero from '../../components/Hero'
 import { useEffect, useState } from 'react'
 
+export interface ItemProdutos {
+  foto: string
+  id: number
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+}
+
 export type Cardapio = {
+  preco: number
+  nome: string
+  porcao: string
+  foto: string
   id: number
   titulo: string
   destacado: boolean
@@ -11,7 +24,7 @@ export type Cardapio = {
   avaliacao: number
   descricao: string
   capa: string
-  cardapio: string[]
+  cardapio: ItemProdutos[]
 }
 
 const Home = () => {
