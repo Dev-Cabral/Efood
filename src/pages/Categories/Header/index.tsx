@@ -12,34 +12,14 @@ import {
 import logo from '../../../asserts/images/logo.png'
 import bannerImg from '../../../asserts/images/fundo.png'
 import { useEffect, useState } from 'react'
-import { Cardapio } from '../../Home'
+import { Cardapio, ItemProdutos } from '../../Home'
 
-import { Categoria } from '../../../components/Produto/styles'
+type Props = {
+  prato: Cardapio
+}
 
-const Header = () => {
-  const [prato, setPrato] = useState<Cardapio>()
+const Header = ({ prato }: Props) => {
   const { id } = useParams()
-
-  useEffect(() => {
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/1`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/2`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/3`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/4`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/5`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/6`).then(
-      (res) => res.json().then((res) => setPrato(res))
-    )
-  }, [id])
 
   return (
     <Container>
