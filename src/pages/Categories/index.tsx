@@ -7,9 +7,8 @@ import { useParams } from 'react-router-dom'
 
 const Category = () => {
   const { id } = useParams()
-  // alert(id)
 
-  const [restaurante, setRestaurante] = useState<Cardapio[]>([])
+  const [restaurante, setRestaurante] = useState<Cardapio>()
 
   useEffect(() => {
     fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`).then(
@@ -19,8 +18,8 @@ const Category = () => {
 
   return (
     <>
-      <Header prato={restaurante} pratos={undefined} />
-      <ListagemProdutos lista={restaurante} listagem={[]} />
+      <Header prato={restaurante} />
+      {/* <ListagemProdutos listagem={restaurante} /> */}
       <Modal />
     </>
   )

@@ -17,7 +17,7 @@ type ModalState = {
   isVisible: boolean
 }
 
-const Produto = ({ foto, descricao, nome, id }: ItemProdutos) => {
+const Produto = ({ foto, descricao, nome }: ItemProdutos) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false
   })
@@ -34,7 +34,6 @@ const Produto = ({ foto, descricao, nome, id }: ItemProdutos) => {
       <Titulo>{nome}</Titulo>
       <Descricao>{descricao}</Descricao>
       <Botao
-        to={`/produto/${id}`}
         onClick={() => {
           setModal({
             isVisible: true

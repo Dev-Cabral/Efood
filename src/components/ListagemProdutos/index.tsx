@@ -5,22 +5,22 @@ import Produto from '../Produto'
 import { List } from './styles'
 
 export type Props = {
-  listagem: Cardapio[]
-  lista: ItemProdutos[]
+  listagem: ItemProdutos[]
+  // lista: ItemProdutos[]
 }
 
 const ListagemProdutos = ({ listagem }: Props) => (
   <ProductContainer>
     <List>
-      {listagem.map((lista) => (
-        <li key={lista.id}>
+      {listagem.map((listagem) => (
+        <li key={listagem.id}>
           <Produto
-            foto={lista.foto}
-            descricao={lista.descricao}
-            porcao={lista.porcao}
-            nome={lista.nome}
-            preco={lista.preco}
-            id={lista.id}
+            foto={listagem.foto}
+            descricao={listagem.descricao}
+            porcao={listagem.porcao}
+            nome={listagem.nome}
+            preco={listagem.preco}
+            id={listagem.id}
           />
         </li>
       ))}

@@ -81,7 +81,7 @@ export const Destaque = styled.h3`
   text-align: center;
   padding: 6px 16px;
 `
-export const Botao = styled(Link)`
+export const Botao = styled.button`
   width: 304px;
   height: 24px;
   padding: 4px;

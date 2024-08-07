@@ -23,6 +23,7 @@ export type Props = {
 }
 
 const Product = ({
+  id,
   titulo,
   destacado,
   tipo,
@@ -30,8 +31,6 @@ const Product = ({
   descricao,
   capa
 }: Props) => {
-  const { id } = useParams()
-
   return (
     <Container>
       {destacado && <Destaque>Destaque da semana</Destaque>}
