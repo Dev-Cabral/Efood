@@ -19,7 +19,7 @@ const Category = () => {
   return (
     <>
       <Header prato={restaurante} />
-      {/* <ListagemProdutos listagem={restaurante} /> */}
+      <ListagemProdutos listagem={restaurante?.cardapio} />
       <Modal />
     </>
   )

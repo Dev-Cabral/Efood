@@ -21,7 +21,7 @@ export const Imagem2 = styled.div`
 
   img {
     width: 100%;
-    height: 280px;
+    height: 290px;
     object-fit: cover;
   }
 `

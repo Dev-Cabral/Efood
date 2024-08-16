@@ -22,6 +22,13 @@ const Produto = ({ foto, descricao, nome }: ItemProdutos) => {
     isVisible: false
   })
 
+  const getDescricao = (description: string) => {
+    if (description.length > 95) {
+      return description.slice(0, 122) + '...'
+    }
+    return description
+  }
+
   const closeModal = () => {
     setModal({
       isVisible: false
@@ -32,7 +39,7 @@ const Produto = ({ foto, descricao, nome }: ItemProdutos) => {
     <Card>
       <img src={foto} alt={foto} />
       <Titulo>{nome}</Titulo>
-      <Descricao>{descricao}</Descricao>
+      <Descricao>{getDescricao(descricao)}</Descricao>
       <Botao
         onClick={() => {
           setModal({

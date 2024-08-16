@@ -6,9 +6,9 @@ export const List = styled.ul`
   color: ${cores.branca};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 28px;
+  gap: 32px;
   border: 1px solide ${cores.vermelho};
-  padding-top: 190px;
+  padding-top: 100px;
 `
 
 export const Title = styled.h2`

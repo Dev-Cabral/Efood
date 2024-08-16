@@ -1,17 +1,22 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
-import { Link } from 'react-router-dom'
 
 export const Card = styled.ul`
-  width: 320px;
-  height: 358px;
   background-color: ${cores.vermelho};
   border: 2px solid ${cores.vermelho};
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px;
+  width: 320px;
+  height: 348px;
 
   img {
-    margin: 8px 8px;
-    max-width: 95%;
+    width: 304px;
+    height: 167px;
+    object-fit: cover;
   }
 `
 
@@ -49,10 +54,13 @@ color: ${cores.branca};
 
 export const Descricao = styled.p`
   color: ${cores.branca};
+  font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  display: flex;
-  margin: 4px 4px;
+  // font-size: 14px;
+  // line-height: 22px;
+  // display: flex;
+  // margin: 4px 4px;
 `
 export const Categoria = styled.div`
   background-color: ${cores.rosaFundo};
@@ -79,17 +87,22 @@ export const Destaque = styled.h3`
   font-size: 12px;
   padding: 4px;
   text-align: center;
-  padding: 6px 16px;
+  padding: 4px 16px;
 `
 export const Botao = styled.button`
-  width: 304px;
-  height: 24px;
-  padding: 4px;
-  margin-left: 4px;
-  margin-bottom: 4px;
-  cursor: pointer;
   border: none;
-  font-weight: bold;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 14px;
+  height: 24px;
+  color: rgb(230, 103, 103);
+  background-color: rgb(255, 235, 217);
+  // width: 304px;
+  // height: 24px;
+  padding: 4px;
+  // margin-left: 4px;
+  // margin-bottom: px;
+  // cursor: pointer;
 
   p {
     color: ${cores.vermelho};
