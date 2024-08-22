@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import {
   Container,
   Efood,
@@ -12,8 +12,7 @@ import {
 import logo from '../../../asserts/images/logo.png'
 import bannerImg from '../../../asserts/images/fundo.png'
 import { useEffect, useState } from 'react'
-import { Cardapio, ItemProdutos } from '../../Home'
-import ListagemProdutos from '../../../components/ListagemProdutos'
+import { Cardapio } from '../../Home'
 
 type Props = {
   prato: Cardapio | undefined
@@ -45,7 +44,6 @@ const Header = ({ prato }: Props) => {
           <img src={prato?.capa} alt="" />
         </Imagem2>
       </Container>
-      <ListagemProdutos listagem={[]} />
     </>
   )
 }

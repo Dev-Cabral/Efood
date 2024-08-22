@@ -57,10 +57,6 @@ export const Descricao = styled.p`
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  // font-size: 14px;
-  // line-height: 22px;
-  // display: flex;
-  // margin: 4px 4px;
 `
 export const Categoria = styled.div`
   background-color: ${cores.rosaFundo};
@@ -97,12 +93,7 @@ export const Botao = styled.button`
   height: 24px;
   color: rgb(230, 103, 103);
   background-color: rgb(255, 235, 217);
-  // width: 304px;
-  // height: 24px;
   padding: 4px;
-  // margin-left: 4px;
-  // margin-bottom: px;
-  // cursor: pointer;
 
   p {
     color: ${cores.vermelho};
@@ -110,13 +101,15 @@ export const Botao = styled.button`
     font-size: 14px;
     text-align: center;
     border: none;
-    font-weight: 700;
+    font-weight: 900;
     cursor: pointer;
   }
 `
 export const ButtonCar = styled.button`
 cursor pointer;
 margin: 0;
+width: 218px;
+
 `
 
 export const Container = styled.div`
@@ -125,4 +118,99 @@ export const Container = styled.div`
   top: 490px;
   left: 172px;
   background-color: ${cores.vermelho};
+
+  `
+
+export const ModalContainer = styled.div`
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 1024px;
+  height: 344px;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 1024px;
+  background-color: ${cores.vermelho};
+  color: ${cores.branca};
+  width: 100%;
+  position: relative;
+  left: 0;
+`
+export const PizzaImg = styled.div`
+  img {
+    width: 280px;
+    height: 280px;
+    margin: 0px 32px;
+    object-fit: cover;
+  }
+`
+
+export const HeaderModal = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-top: -64px;
+  margin-bottom: 16px;
+
+  h4 {
+    margin-top: -16px;
+    height: 22px;
+    font-weight: bold;
+  }
+
+  img {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    margin-bottom: 36px;
+    height: 16px;
+    cursor: pointer;
+  }
+`
+export const ContainerBody = styled.div`
+  p {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  button {
+    widht: 218px;
+    height: 24px;
+    background-color: ${cores.rosaFundo};
+    color: ${cores.vermelho};
+    border: none;
+    margin-bottom: 24px;
+    font-weight: bold;
+    padding: 4px;
+  }
+`
+export const ContainerMod = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &.visible {
+    display: flex;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.73);
+  }
 `

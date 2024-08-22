@@ -81,16 +81,6 @@ export const Categoria = styled.div`
     font-weight: 700;
     text-align: center;
   }
-
-  // @media (max-width: 640px) {
-  //   width: 80px;
-  //   top: 10px;
-  //   left: 585px;
-  //   position: absolute;
-  //   display: flex;
-  //   padding: 2px;
-  //   text-align: center;
-  // }
 `
 export const Destaque = styled.div`
   position: absolute;

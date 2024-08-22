@@ -13,10 +13,6 @@ export interface ItemProdutos {
 }
 
 export type Cardapio = {
-  // preco: number
-  // nome: string
-  // porcao: string
-  // foto: string
   id: number
   titulo: string
   destacado: boolean

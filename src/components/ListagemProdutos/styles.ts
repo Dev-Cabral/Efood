@@ -8,7 +8,7 @@ export const List = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
   border: 1px solide ${cores.vermelho};
-  padding-top: 100px;
+  padding: 250px 0 50px;
 `
 
 export const Title = styled.h2`

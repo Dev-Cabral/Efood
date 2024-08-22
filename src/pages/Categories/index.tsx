@@ -1,8 +1,7 @@
 import Header from './Header'
 import ListagemProdutos from '../../components/ListagemProdutos'
-import Modal from './Modal'
 import { useEffect, useState } from 'react'
-import { Cardapio, ItemProdutos } from '../Home'
+import { Cardapio } from '../Home'
 import { useParams } from 'react-router-dom'
 
 const Category = () => {
@@ -20,7 +19,6 @@ const Category = () => {
     <>
       <Header prato={restaurante} />
       <ListagemProdutos listagem={restaurante?.cardapio} />
-      <Modal />
     </>
   )
 }
