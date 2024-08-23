@@ -1,5 +1,5 @@
 // import { ItemProdutos } from '../../pages/Categories'
-import { Cardapio, ItemProdutos } from '../../pages/Home'
+import { ItemProdutos } from '../../pages/Home'
 import { ProductContainer } from '../ProductList/styles'
 import Produto from '../Produto'
 import { List } from './styles'

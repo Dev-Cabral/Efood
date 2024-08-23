@@ -1,7 +1,8 @@
 import ProductList from '../../components/ProductList'
 
 import Hero from '../../components/Hero'
-import { useEffect, useState } from 'react'
+
+import { useGetHomeCardapioQuery } from '../../services/api'
 
 export interface ItemProdutos {
   foto: string
@@ -24,18 +25,20 @@ export type Cardapio = {
 }
 
 const Home = () => {
-  const [promocoes, setPromocoes] = useState<Cardapio[]>([])
+  const { prato: restaurante, isLoading } = useGetHomeCardapioQuery()
 
-  useEffect(() => {
-    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes').then(
-      (res) => res.json().then((res) => setPromocoes(res))
-    )
-  }, [])
+  // const [promocoes, setPromocoes] = useState<Cardapio[]>([])
+
+  // useEffect(() => {
+  //   fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes').then(
+  //     (res) => res.json().then((res) => setPromocoes(res))
+  //   )
+  // }, [])
 
   return (
     <>
       <Hero />
-      <ProductList prato={promocoes} />
+      <ProductList prato={restaurante} />
     </>
   )
 }
