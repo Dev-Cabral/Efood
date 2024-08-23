@@ -1,14 +1,14 @@
 import ListagemProdutos from '../../components/ListagemProdutos'
 import Header from './Header'
 
-import { useGetaCategoryQuery } from '../../services/api'
+import { useParams } from 'react-router-dom'
+import { useGetCategoryQuery } from '../../services/api'
 
 const Category = () => {
-  const { data: restaurante, isLoading } = useGetaCategoryQuery()
+  const { id } = useParams()
+  const { data: cardapio } = useGetCategoryQuery(id!)
 
   // const { dados: listagem } = useGetCategoryCardapioQuery()
-
-  // const { id } = useParams()
 
   // const [restaurante, setRestaurante] = useState<Cardapio>()
 
@@ -20,8 +20,8 @@ const Category = () => {
 
   return (
     <>
-      <Header prato={restaurante} />
-      <ListagemProdutos listagem={restaurante?.cardapio} />
+      <Header prato={home} />
+      <ListagemProdutos listagem={cardapio} />
     </>
   )
 }

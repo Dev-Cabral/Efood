@@ -1,24 +1,27 @@
 import { Link } from 'react-router-dom'
 import {
+  Car,
   Container,
+  ContainerHeader,
   Efood,
   Imagem2,
-  Car,
   Italiana,
-  Titulo,
-  ContainerHeader
+  Titulo
 } from './styles'
 
-import logo from '../../../asserts/images/logo.png'
 import bannerImg from '../../../asserts/images/fundo.png'
-import { useEffect, useState } from 'react'
+import logo from '../../../asserts/images/logo.png'
 import { Cardapio } from '../../Home'
+
+import { useGetaCategoryQuery } from '../../../services/api'
 
 type Props = {
   prato: Cardapio | undefined
 }
 
 const Header = ({ prato }: Props) => {
+  const { data: home } = useGetaCategoryQuery(id!)
+
   return (
     <>
       <Container>

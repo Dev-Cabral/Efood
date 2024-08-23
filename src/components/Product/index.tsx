@@ -2,14 +2,14 @@ import { Link } from 'react-router-dom'
 
 import estrela from '../../asserts/images/estrela.png'
 import {
+  Botao,
   Card,
   Categoria,
+  Container,
   Descricao,
   Destaque,
   Estrela,
-  Botao,
-  Titulo,
-  Container
+  Titulo
 } from './styles'
 
 export type Props = {

@@ -3,18 +3,18 @@ import { Cardapio, ItemProdutos } from '../pages/Home'
 
 const api = createApi({
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://fake-api-tau.vercel.app/api/efood/restaurantes'
+    baseUrl: `https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`
   }),
   endpoints: (builder) => ({
-    getHomeCardapio: builder.query<Cardapio[], void>({
-      query: () => 'id'
+    getHome: builder.query<Cardapio, void>({
+      query: () => ''
     }),
-    getaCategory: builder.query<ItemProdutos[], void>({
-      query: () => '/restaurantes/:id'
+    getCategory: builder.query<ItemProdutos, number>({
+      query: (id) => `/${id}`
     })
   })
 })
 
-export const { useGetHomeCardapioQuery, useGetaCategoryQuery } = api
+export const { useGetHomeQuery, useGetCategoryQuery } = api
 
 export default api

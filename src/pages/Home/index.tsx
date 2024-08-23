@@ -2,7 +2,7 @@ import ProductList from '../../components/ProductList'
 
 import Hero from '../../components/Hero'
 
-import { useGetHomeCardapioQuery } from '../../services/api'
+import { useGetHomeQuery } from '../../services/api'
 
 export interface ItemProdutos {
   foto: string
@@ -25,7 +25,7 @@ export type Cardapio = {
 }
 
 const Home = () => {
-  const { prato: restaurante, isLoading } = useGetHomeCardapioQuery()
+  const { data: home } = useGetHomeQuery()
 
   // const [promocoes, setPromocoes] = useState<Cardapio[]>([])
 
@@ -38,7 +38,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <ProductList prato={restaurante} />
+      <ProductList prato={home} />
     </>
   )
 }
