@@ -1,7 +1,6 @@
 import ProductList from '../../components/ProductList'
 
 import Hero from '../../components/Hero'
-
 import { useGetHomeQuery } from '../../services/api'
 
 export interface ItemProdutos {
@@ -27,6 +26,9 @@ export type Cardapio = {
 
 const Home = () => {
   const { data: home } = useGetHomeQuery()
+
+  // const home: Cardapio[] | undefined = undefined
+  // alert(JSON.stringify(home))
 
   return (
     <>

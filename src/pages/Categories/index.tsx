@@ -4,12 +4,15 @@ import Header from './Header'
 import { useParams } from 'react-router-dom'
 import { useGetCategoryQuery } from '../../services/api'
 
+import { Cardapio } from '../Home'
+
 const Category = () => {
-  const { id } = useParams()
+  const { id } = useParams<{ id: string }>()
 
-  const parsedId = id !== undefined ? parseInt(id, 7) : undefined
+  const parsedId = id !== undefined ? parseInt(id, 10) : undefined
 
-  const { data: cardapio } = useGetCategoryQuery(parsedId as number)
+  const { data: itemProdutos } = useGetCategoryQuery(parsedId as number)
+  const cardapio: Cardapio | undefined = itemProdutos as unknown as Cardapio
 
   return (
     <>

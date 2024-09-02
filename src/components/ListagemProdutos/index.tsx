@@ -1,4 +1,3 @@
-// import { ItemProdutos } from '../../pages/Categories'
 import { ItemProdutos } from '../../pages/Home'
 import { ProductContainer } from '../ProductList/styles'
 import Produto from '../Produto'
