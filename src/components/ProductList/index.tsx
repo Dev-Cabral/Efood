@@ -10,7 +10,7 @@ const ProductList = ({ prato }: Props) => {
   return (
     <ProductContainer>
       <List>
-        {prato.map((prato) => (
+        {prato?.map((prato) => (
           <Product
             key={prato.id}
             id={prato.id}

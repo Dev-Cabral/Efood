@@ -5,6 +5,7 @@ import Hero from '../../components/Hero'
 import { useGetHomeQuery } from '../../services/api'
 
 export interface ItemProdutos {
+  avaliacao: number
   foto: string
   id: number
   nome: string
@@ -26,14 +27,6 @@ export type Cardapio = {
 
 const Home = () => {
   const { data: home } = useGetHomeQuery()
-
-  // const [promocoes, setPromocoes] = useState<Cardapio[]>([])
-
-  // useEffect(() => {
-  //   fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes').then(
-  //     (res) => res.json().then((res) => setPromocoes(res))
-  //   )
-  // }, [])
 
   return (
     <>

@@ -20,6 +20,7 @@ const ListagemProdutos = ({ listagem }: Props) => (
             nome={listagem.nome}
             preco={listagem.preco}
             id={listagem.id}
+            avaliacao={listagem.avaliacao}
           />
         </li>
       ))}

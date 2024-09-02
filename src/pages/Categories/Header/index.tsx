@@ -13,15 +13,11 @@ import bannerImg from '../../../asserts/images/fundo.png'
 import logo from '../../../asserts/images/logo.png'
 import { Cardapio } from '../../Home'
 
-import { useGetaCategoryQuery } from '../../../services/api'
-
 type Props = {
-  prato: Cardapio | undefined
+  pratos: Cardapio | undefined
 }
 
-const Header = ({ prato }: Props) => {
-  const { data: home } = useGetaCategoryQuery(id!)
-
+const Header = ({ pratos }: Props) => {
   return (
     <>
       <Container>
@@ -41,10 +37,10 @@ const Header = ({ prato }: Props) => {
         </ContainerHeader>
         <Imagem2>
           <Italiana>
-            <h2>{prato?.tipo}</h2>
+            <h2>{pratos?.tipo}</h2>
           </Italiana>
-          <Titulo>{prato?.titulo}</Titulo>
-          <img src={prato?.capa} alt="" />
+          <Titulo>{pratos?.titulo}</Titulo>
+          <img src={pratos?.capa} alt="" />
         </Imagem2>
       </Container>
     </>

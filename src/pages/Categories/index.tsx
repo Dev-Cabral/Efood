@@ -6,22 +6,15 @@ import { useGetCategoryQuery } from '../../services/api'
 
 const Category = () => {
   const { id } = useParams()
-  const { data: cardapio } = useGetCategoryQuery(id!)
 
-  // const { dados: listagem } = useGetCategoryCardapioQuery()
+  const parsedId = id !== undefined ? parseInt(id, 7) : undefined
 
-  // const [restaurante, setRestaurante] = useState<Cardapio>()
-
-  // useEffect(() => {
-  //   fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`).then(
-  //     (res) => res.json().then((res) => setRestaurante(res))
-  //   )
-  // }, [id])
+  const { data: cardapio } = useGetCategoryQuery(parsedId as number)
 
   return (
     <>
-      <Header prato={home} />
-      <ListagemProdutos listagem={cardapio} />
+      <Header pratos={cardapio} />
+      <ListagemProdutos listagem={cardapio?.cardapio} />
     </>
   )
 }
