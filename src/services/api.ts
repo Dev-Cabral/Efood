@@ -6,7 +6,7 @@ const api = createApi({
     baseUrl: `https://fake-api-tau.vercel.app/api/efood/`
   }),
   endpoints: (builder) => ({
-    getHome: builder.query<Cardapio, void>({
+    getHome: builder.query<Cardapio[], void>({
       query: () => 'restaurantes'
     }),
     getCategory: builder.query<ItemProdutos, number>({
