@@ -1,19 +1,22 @@
 import { useState } from 'react'
 
+import { add } from '../../store/reducers/cart'
+
+import close from '../../asserts/images/fechar.png'
 import {
-  Card,
-  Descricao,
   Botao,
-  Titulo,
   ButtonCar,
+  Card,
+  ContainerBody,
+  ContainerMod,
+  Descricao,
+  HeaderModal,
   ModalContainer,
   PizzaImg,
-  ContainerBody,
-  HeaderModal,
-  ContainerMod
+  Titulo
 } from './styles'
-import close from '../../asserts/images/fechar.png'
 
+import { useDispatch } from 'react-redux'
 import { ItemProdutos } from '../../pages/Home'
 
 type ModalState = {
@@ -36,6 +39,12 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
     setModal({
       isVisible: false
     })
+  }
+
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    dispatch(add())
   }
 
   return (
@@ -72,7 +81,9 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
               {descricao} <br /> <br />
               Serve de: {porcao}
             </p>
-            <ButtonCar>Adicionar ao carrinho - {preco}</ButtonCar>
+            <ButtonCar onClick={addToCart}>
+              Adicionar ao carrinho - {preco}
+            </ButtonCar>
           </ContainerBody>
         </ModalContainer>
         <div

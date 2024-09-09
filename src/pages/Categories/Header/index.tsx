@@ -9,15 +9,24 @@ import {
   Titulo
 } from './styles'
 
+import { useDispatch } from 'react-redux'
+import { open } from '../../../store/reducers/cart'
+
 import bannerImg from '../../../asserts/images/fundo.png'
 import logo from '../../../asserts/images/logo.png'
 import { Cardapio } from '../../Home'
 
-type Props = {
+export type Props = {
   pratos: Cardapio | undefined
 }
 
 const Header = ({ pratos }: Props) => {
+  const dispatch = useDispatch()
+
+  const openCart = () => {
+    dispatch(open())
+  }
+
   return (
     <>
       <Container>
@@ -32,7 +41,7 @@ const Header = ({ pratos }: Props) => {
             <img src={logo} alt="EFOOD" />
           </Efood>
           <Car>
-            <p>0 - produtos(s) no carrinho</p>
+            <p onClick={openCart}>0 - produtos(s) no carrinho</p>
           </Car>
         </ContainerHeader>
         <Imagem2>

@@ -88,6 +88,7 @@ export const Car = styled.div`
     z-index: 1;
     font-weight: 900;
     font-size: 18px;
+    cursor: pointer;
   }
 `
 

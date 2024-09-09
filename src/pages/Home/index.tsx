@@ -27,9 +27,6 @@ export type Cardapio = {
 const Home = () => {
   const { data: home } = useGetHomeQuery()
 
-  // const home: Cardapio[] | undefined = undefined
-  // alert(JSON.stringify(home))
-
   return (
     <>
       <Hero />
