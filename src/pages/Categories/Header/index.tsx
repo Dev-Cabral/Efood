@@ -9,11 +9,12 @@ import {
   Titulo
 } from './styles'
 
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { open } from '../../../store/reducers/cart'
 
 import bannerImg from '../../../asserts/images/fundo.png'
 import logo from '../../../asserts/images/logo.png'
+import { RootReducer } from '../../../store'
 import { Cardapio } from '../../Home'
 
 export type Props = {
@@ -22,6 +23,7 @@ export type Props = {
 
 const Header = ({ pratos }: Props) => {
   const dispatch = useDispatch()
+  const { items } = useSelector((state: RootReducer) => state.cart)
 
   const openCart = () => {
     dispatch(open())
@@ -41,7 +43,7 @@ const Header = ({ pratos }: Props) => {
             <img src={logo} alt="EFOOD" />
           </Efood>
           <Car>
-            <p onClick={openCart}>0 - produtos(s) no carrinho</p>
+            <p onClick={openCart}> {items.length} - produtos(s) no carrinho</p>
           </Car>
         </ContainerHeader>
         <Imagem2>

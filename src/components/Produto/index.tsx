@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react'
 
-import { add } from '../../store/reducers/cart'
+import { add, open } from '../../store/reducers/cart'
 
 import close from '../../asserts/images/fechar.png'
 import {
@@ -40,11 +41,24 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
       isVisible: false
     })
   }
+  // const { items } = useSelector((state: RootReducer) => state.cart)
 
   const dispatch = useDispatch()
 
-  const addToCart = () => {
-    dispatch(add())
+  const handleClick = () => {
+    dispatch(open())
+    const itemToAdd: ItemProdutos = {
+      foto,
+      descricao,
+      nome,
+      porcao,
+      preco,
+      avaliacao: 0,
+      id: 0
+    }
+    dispatch(add(itemToAdd))
+    closeModal()
+    closeModal()
   }
 
   return (
@@ -81,7 +95,7 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
               {descricao} <br /> <br />
               Serve de: {porcao}
             </p>
-            <ButtonCar onClick={addToCart}>
+            <ButtonCar onClick={() => handleClick()}>
               Adicionar ao carrinho - {preco}
             </ButtonCar>
           </ContainerBody>
