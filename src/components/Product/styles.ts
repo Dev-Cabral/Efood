@@ -21,6 +21,16 @@ export const Card = styled.div`
     width: 472px;
     height: 217px;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+      width: 409px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 412px;
+    height: 485px;
+    top: 40px;
   }
 `
 
@@ -81,6 +91,9 @@ export const Categoria = styled.div`
     font-weight: 700;
     text-align: center;
   }
+  @media (max-width: 768px) {
+    left: 318px;
+  }
 `
 export const Destaque = styled.div`
   position: absolute;
@@ -128,5 +141,11 @@ export const Botao = styled.button`
     text-align: center;
     border: none;
   }
+
+    @media (max-width: 768px) {
+    margin-top: 86px;
+        margin-left: 14px;
   }
+  }
+
 `

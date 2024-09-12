@@ -5,6 +5,7 @@ export const ProductContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   }
 `
 
@@ -14,6 +15,13 @@ export const List = styled.ul`
   grid-template-columns: 1fr 1fr;
   column-gap: 6px;
   border: 2px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
 `
 
 export const Title = styled.h2`

@@ -33,6 +33,10 @@ export const Sidebar = styled.aside`
   max-width: 360px;
   padding: 32px 8px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    max-width: 314px;
+  }
 `
 export const Prices = styled.p`
   display: flex;
@@ -72,6 +76,11 @@ export const ItemCart = styled.li`
       font-weight: 400;
       font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+      padding: 8px 8px 0px;
+      width: 296px;
+    }
   }
 
   button {
@@ -84,6 +93,10 @@ export const ItemCart = styled.li`
     border: none;
     background-image: url('https://efood-blue.vercel.app/assets/lixeira-icone-TIe-BsEG.svg');
     background-color: transparent;
+
+    @media (max-width: 768px) {
+      right: 14px;
+    }
   }
 `
 

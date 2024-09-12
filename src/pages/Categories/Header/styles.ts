@@ -24,6 +24,9 @@ export const Imagem2 = styled.div`
     height: 290px;
     object-fit: cover;
   }
+  @media (max-width: 768px) {
+    margin-top: 48px;
+  }
 `
 
 export const Italiana = styled.div`
@@ -40,6 +43,10 @@ export const Italiana = styled.div`
     font-weight: 100;
     margin-top: 24px;
   }
+
+  @media (max-width: 768px) {
+    right: 298px;
+  }
 `
 export const Titulo = styled.h1`
   color: ${cores.branca};
@@ -51,6 +58,11 @@ export const Titulo = styled.h1`
   right: 344px;
 
   z-index: 1;
+
+  @media (max-width: 768px) {
+    top: 276px;
+    right: 208px;
+  }
 `
 
 export const ContainerHeader = styled.div`
@@ -75,6 +87,15 @@ export const ContainerHeader = styled.div`
       text-decoration: none;
       cursor: pointe;
     }
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 45px;
+      left: 307px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
   }
 `
 export const Car = styled.div`
@@ -90,10 +111,16 @@ export const Car = styled.div`
     font-size: 18px;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 158px;
+    right: 294px;
+  }
 `
 
 export const Efood = styled.div`
-  margin-left: 84px;
+  margin-left: 80px;
   height: 336px;
 
   img {

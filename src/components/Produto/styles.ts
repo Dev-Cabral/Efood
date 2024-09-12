@@ -103,12 +103,28 @@ export const Botao = styled.button`
     border: none;
     font-weight: 900;
     cursor: pointer;
+
+
+    }
   }
 `
 export const ButtonCar = styled.button`
 cursor pointer;
 margin: 0;
 width: 218px;
+color: rgb(230, 103, 103);
+background-color: rgb(255, 235, 217);
+
+
+      @media (max-width: 768px) {
+        position: absolute;
+        top: 542px;
+        left: 48px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        padding: 4px;
+    }
 
 `
 
@@ -136,6 +152,11 @@ export const ModalContainer = styled.div`
   width: 100%;
   position: relative;
   left: 0;
+
+  @media (max-width: 768px) {
+    width: 42%;
+    height: 596px;
+  }
 `
 export const PizzaImg = styled.div`
   img {
@@ -143,6 +164,14 @@ export const PizzaImg = styled.div`
     height: 280px;
     margin: 0px 32px;
     object-fit: cover;
+
+    @media (max-width: 768px) {
+      position: absolute;
+      width: 100%;
+      top: 39px;
+      left: -32px;
+      height: 200px;
+    }
   }
 `
 
@@ -158,6 +187,12 @@ export const HeaderModal = styled.div`
     margin-top: -16px;
     height: 22px;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 286px;
+      left: 60px;
+    }
   }
 
   img {
@@ -177,6 +212,12 @@ export const ContainerBody = styled.div`
     width: 100%;
     font-size: 14px;
     margin-bottom: 16px;
+
+        @media (max-width: 768px) {
+      position: absolute;
+      top: 320px;
+      left: 10px;
+      width: 255px;
   }
 
   button {
