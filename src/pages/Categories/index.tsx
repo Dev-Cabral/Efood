@@ -4,6 +4,7 @@ import Header from './Header'
 import { useParams } from 'react-router-dom'
 import { useGetCategoryQuery } from '../../services/api'
 
+import Cart from '../../components/Cart'
 import { Cardapio } from '../Home'
 
 const Category = () => {
@@ -17,6 +18,7 @@ const Category = () => {
   return (
     <>
       <Header pratos={cardapio} />
+      <Cart />
       <ListagemProdutos listagem={cardapio?.cardapio} />
     </>
   )

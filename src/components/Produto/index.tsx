@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react'
 
 import { add, open } from '../../store/reducers/cart'
@@ -24,7 +23,14 @@ type ModalState = {
   isVisible: boolean
 }
 
-const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
+const Produto = ({
+  foto,
+  descricao,
+  nome,
+  porcao,
+  preco,
+  id
+}: ItemProdutos) => {
   const [modal, setModal] = useState<ModalState>({
     isVisible: false
   })
@@ -41,7 +47,6 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
       isVisible: false
     })
   }
-  // const { items } = useSelector((state: RootReducer) => state.cart)
 
   const dispatch = useDispatch()
 
@@ -53,8 +58,8 @@ const Produto = ({ foto, descricao, nome, porcao, preco }: ItemProdutos) => {
       nome,
       porcao,
       preco,
-      avaliacao: 0,
-      id: 0
+      id,
+      avaliacao: 0
     }
     dispatch(add(itemToAdd))
     closeModal()
