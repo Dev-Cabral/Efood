@@ -114,6 +114,7 @@ margin: 0;
 width: 218px;
 color: rgb(230, 103, 103);
 background-color: rgb(255, 235, 217);
+border: none;
 
 
       @media (max-width: 768px) {

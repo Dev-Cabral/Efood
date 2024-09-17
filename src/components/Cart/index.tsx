@@ -1,7 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
-import { close, remove } from '../../store/reducers/cart'
 
+import { close, open, remove } from '../../store/reducers/cart'
+
+import { Link } from 'react-router-dom'
 import {
   ButtonAside,
   ContainerCart,
@@ -13,6 +15,10 @@ import {
 
 const Cart = () => {
   const dispatch = useDispatch()
+
+  const handleClick = () => {
+    dispatch(open())
+  }
 
   const closeCart = () => {
     dispatch(close())
@@ -54,8 +60,14 @@ const Cart = () => {
         <Prices>
           Valor Total <span> {getTotalPreco()}</span>
         </Prices>
-        <ButtonAside title="Clique aqui para continuar comprando" type="button">
-          Continuar com a entrega
+        <ButtonAside
+          onClick={() => handleClick()}
+          title="Clique aqui para continuar comprando"
+          type="button"
+        >
+          <Link className="buttom" to={'entrega'}>
+            Continuar com a entrega
+          </Link>
         </ButtonAside>
       </Sidebar>
     </ContainerCart>

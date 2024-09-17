@@ -34,10 +34,63 @@ export const Sidebar = styled.aside`
   padding: 32px 8px;
   width: 100%;
 
+  h3 {
+    font-size: 16px;
+    color: rgb(255, 235, 217);
+    margin-bottom: 16px;
+    font-weight: 700;
+  }
+
   @media (max-width: 768px) {
     max-width: 314px;
   }
 `
+export const LabelInput = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 235, 217);
+    margin-bottom: 8px;
+  }
+
+  input {
+    height: 32px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 235, 217);
+  }
+`
+export const Endereco = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
+export const Complemento = styled.div`
+  margin-bottom: 18px;
+`
+
+export const CepeNumero = styled.div`
+  margin-right: 34px;
+
+  label {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 235, 217);
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 155px;
+    margin-top: 8px;
+    height: 32px;
+    border: 8px solid ${cores.rosaFundo};
+    margin-bottom: 18px;
+  }
+`
+
 export const Prices = styled.p`
   display: flex;
   justify-content: space-between;
@@ -107,6 +160,9 @@ export const ButtonAside = styled.button`
   font-weight: 700;
   background-color: ${cores.rosaFundo};
   border: none;
+  margin-top: 8px;
+  color: ${cores.vermelho};
+  cursor: pointer;
 
   a {
     text-decoration: none;
@@ -114,6 +170,5 @@ export const ButtonAside = styled.button`
 
   .buttom {
     color: ${cores.vermelho};
-    cursor: pointer;
   }
 `

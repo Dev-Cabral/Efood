@@ -19,6 +19,7 @@ import { Cardapio } from '../../Home'
 
 export type Props = {
   pratos: Cardapio | undefined
+  children?: React.ReactNode // Adiciona children como opcional
 }
 
 const Header = ({ pratos }: Props) => {
